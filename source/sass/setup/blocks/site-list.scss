@@ -1,0 +1,16 @@
+.site-list__item {
+  font-family: Oswald;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: bold;
+  color: $basic-dark;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.site-list__link{
+  list-style-type: none;
+  font-family: Oswald;
+  text-transform: uppercase;
+}

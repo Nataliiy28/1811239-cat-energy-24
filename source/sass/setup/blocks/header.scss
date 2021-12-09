@@ -1,3 +1,17 @@
 .header__top {
  list-style: none;
+
 }
+.header__logo{
+  display: block;
+  list-style: none;
+}
+
+.header__tex-heder {
+  @include tablets {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(".../img/background/cat-background.jpeg");
+  }
