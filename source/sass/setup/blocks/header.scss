@@ -1,17 +1,35 @@
 .header__top {
- list-style: none;
-
+  list-style: none;
 }
-.header__logo{
+.header__logo {
   display: block;
   list-style: none;
+  text-align: center;
 }
 
 .header__tex-heder {
+  list-style-type: none;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+  background-image: url("../../../img/background/cat-background.jpeg");
   @include tablets {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(".../img/background/cat-background.jpeg");
+    background-image: url("");
   }
+}
+
+.header__tex-subtitle {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+}

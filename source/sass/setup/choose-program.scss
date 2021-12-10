@@ -1,0 +1,39 @@
+.choose-program__button {
+  background: $basic-green;
+  width: 280px;
+  height: 40px;
+  line-height: 20px;
+  padding: 14px 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 44px;
+  margin-left: 60px;
+
+}
+
+.choose-program__subtitle {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-left: 111px;
+}
+
+.choose-program__description {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 96px;
+  margin-bottom: 23px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  width: 227px;
+  height: 90px;
+}
