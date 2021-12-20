@@ -15,7 +15,8 @@
   font-size: 36px;
   line-height: 36px;
   color: $white;
-  background-image: url("../../../img/background/cat-background.jpeg");
+  background-image: url("../img/background/cat-background.jpeg");
+
   @include tablets {
     position: relative;
     background-repeat: no-repeat;
@@ -32,4 +33,6 @@
   font-size: 14px;
   line-height: 14px;
   color: #FFFFFF;
+  margin-top: 45px ;
+  margin-bottom: 70px;
 }

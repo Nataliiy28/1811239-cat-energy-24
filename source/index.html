@@ -6,9 +6,8 @@
     <title>HTML Academy:Кэт энерджи.Функциональное питание для котов</title>
     <link rel="icon" href="./img/favicon/favicon_32.ico">
     <link rel="icon" href="./img/favicon/32.svg" sizes="any" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./img/favicon/favicon_32.ico">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link href="https://fonts.google.com/share?selection.family=Oswald" rel="stylesheet">
+    <link rel="apple-touch-icon" href="./img/favicon/favicon_32.ico">>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous" referrerpolicy="no-referrer"/>
@@ -18,9 +17,13 @@
  <header class="header">
         <div class="header__top">
           <div class="container">
-            <nav>
-               <ul class="site-list">
-              <li class="site-list__item">
+            <nav class="main-nav main-nav--closed  main-nav--opened main-nav--nojs">
+
+              <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+                <span class="visually-hidden">Открыть меню</span></button>
+               <div class="main-nav__wrapper">
+                 <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
                 <span class="site-list__link"> <a href="photo.html">главная</a> </span>
               </li>
               <li class="site-list__item">
@@ -30,6 +33,15 @@
                 <span class="site-list__link"> <a href="photo.html">подбор программы</a></span>
               </li>
             </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__login js-login" href="login.html">
+                  Войти
+                </a>
+              </li>
+            </ul>
+               </div>
+
           </nav>
           <span>
             <a class="header__logo">
@@ -43,7 +55,7 @@
             <div class="header-section">
                <h1 class="header__tex-heder">Функциональное&nbsp;питание для котов</h1>
             <h2 class="header__tex-subtitle">Занялся собой? Займись котом!</h2>
-            <img src="./img/background/can-mobile.svg" width= "280" height="270" alt="банка с кошачьим кормом">
+            <img class="can__of-feed" src="./img/background/can-mobile.svg" width= "280" height="270" alt="банка с кошачьим кормом">
             </div>
 
          <div class="choose-program">
