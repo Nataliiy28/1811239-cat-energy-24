@@ -1,16 +1,20 @@
 .choose-program__button {
   background: $basic-green;
-  width: 280px;
+  width: 335px;
   height: 40px;
   line-height: 20px;
   padding: 14px 0;
   cursor: pointer;
-  display: flex;
+  //  display: flex;
   flex-direction: row;
   align-items: center;
   padding: 8px 44px;
-  margin-left: 60px;
-
+  margin-left: 39px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  margin-bottom: 20px;
 }
 
 .choose-program__subtitle {
@@ -20,13 +24,15 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  margin-left: 111px;
+  display: grid;
+  justify-content: center;
+  grid-column: 1/1;
+  grid-row: 1/ 2;
 }
 
 .choose-program__description {
   position: relative;
-  margin-left: 40px;
-  margin-top: 96px;
+  margin-left: 8px;
   margin-bottom: 23px;
   font-family: Arial;
   font-style: normal;
@@ -36,8 +42,13 @@
   color: $special_dark-grey;
   width: 227px;
   height: 90px;
+  color: $special_dark-grey;
 }
 
 .choose-program {
-  margin-bottom: 150px;
+  margin-top: 140px;
+}
+
+.choose-program__img {
+  margin-top: 10px;
 }

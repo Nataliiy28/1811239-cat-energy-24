@@ -24,7 +24,7 @@
   width: 36px;
   height: 2px;
   background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
 // @include phones {
 // width: 420px;
@@ -33,8 +33,9 @@
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade(#ffffff, 30%);
   box-shadow:
-    0 8px 0 0 fade(#ffffff, 30%),
-    0 16px 0 0 fade(#ffffff, 30%);
+    0 8px 0 0 fade($black, 30%),
+    0 16px 0 0 fade($black, 30%),
+    0 32px 0 0 fade($black, 30%);
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -64,6 +65,14 @@
 
   &:active::before,
   &:active::after {
-    background-color: fade(#ffffff, 30%);
+    background-color: fade(#000000, 30%);
   }
+}
+
+
+
+.main-nav__list {
+  text-align: center;
+  text-decoration: none;
+  color: $black;
 }

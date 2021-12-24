@@ -1,0 +1,70 @@
+.exemple {
+  background-image: url("../img/background/back_grey-life.jpeg");
+  width: 100%;
+  height: 700px;
+
+}
+
+.exemple__header {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+}
+
+.exemple__header-explanation {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.exemple__text-regular {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  width: 280px;
+  height: 108px;
+  color: $special_dark-grey;
+}
+
+.exemple-item {
+
+}
+
+.exemple__text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: $special_dark-grey;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.exemple-section__plate-list {
+  display: flex;
+  text-decoration: none;
+
+}
+
+.exemple__caption {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.exemple-section__plate-item {
+  margin-right: 32px;
+}

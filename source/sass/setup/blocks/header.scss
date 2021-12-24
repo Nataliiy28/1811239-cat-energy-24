@@ -1,3 +1,8 @@
+.header-section {
+  background-image: url("../img/background/full-back.jpeg");
+  height: 302px;
+}
+
 .header__top {
   list-style: none;
 }
@@ -15,7 +20,8 @@
   font-size: 36px;
   line-height: 36px;
   color: $white;
-  background-image: url("../img/background/cat-background.jpeg");
+  text-align: center;
+  padding-top: 27px;
 
   @include tablets {
     position: relative;
@@ -32,7 +38,8 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
-  color: #FFFFFF;
-  margin-top: 45px ;
-  margin-bottom: 70px;
+  color: #ffffff;
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
 }

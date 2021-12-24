@@ -1,3 +1,8 @@
+.collabaration {
+  display: flex;
+}
+
+
 .collabaration__rigit-text {
   font-family: Oswald;
   font-style: normal;
@@ -5,4 +10,20 @@
   font-size: 16px;
   line-height: 20px;
   color: $black;
+  text-transform: uppercase;
+  width: 139px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.collabaration__left-text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+  width: 139px;
+  height: 60px;
+  margin-right: 20px;
 }

@@ -3,7 +3,7 @@
 @import "./setup/mixins";
 @import "./setup/base";
 
-@import "./products-section";
+@import "./setup/blocks/products-section";
 @import "./setup/blocks/header";
 @import "./setup/blocks/site-list";
 @import "./setup/blocks/choose-program";
@@ -13,7 +13,9 @@
 @import "./setup/blocks/main-nav";
 @import "./setup/blocks/collabaration";
 @import "./setup/blocks/can";
-
-
-
-
+@import "./setup/blocks/explanation";
+@import "./setup/blocks/user-list";
+@import "./setup/blocks/exemple.scss";
+@import "./setup/blocks/slider";
+@import "./setup/blocks/social";
+@import "./setup/blocks/footer";
