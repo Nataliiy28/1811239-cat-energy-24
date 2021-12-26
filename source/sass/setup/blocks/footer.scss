@@ -1,15 +1,21 @@
 .footer {
   background-color: $basic-grey;
+  // width: 320px;
+  // height: 236px;
 }
 
 .footer__socials {
   display: flex;
   text-decoration: none;
   margin-left: 100px;
+  list-style-type: none;
 }
 
 .footer__develop {
   display: flex;
   margin-left: 19px;
-
+}
+.footer_hat-logo {
+  margin-left: 140px;
+  margin-bottom: 22px;
 }
