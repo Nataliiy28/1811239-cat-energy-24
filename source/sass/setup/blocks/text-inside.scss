@@ -1,0 +1,28 @@
+.text-inside {
+  text-decoration: none;
+}
+
+.text-inside__clarify {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $grafit-grey;
+}
+
+.text-inside__catalog-subtitle {
+  margin: 0px;
+}
+
+.text-inside__catalog-comment {
+  font-family: $font-stack-two;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+}
