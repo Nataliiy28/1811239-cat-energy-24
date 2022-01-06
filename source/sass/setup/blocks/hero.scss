@@ -1,4 +1,4 @@
-.header-section {
+.hero {
   background-image: url("../img/background/full-back.jpeg");
   height: 302px;
 }
@@ -12,7 +12,7 @@
   text-align: center;
 }
 
-.header__tex-heder {
+.hero__title{
   list-style-type: none;
   font-family: Oswald;
   font-style: normal;
@@ -32,14 +32,35 @@
   }
 }
 
-.header__tex-subtitle {
+.hero__subtitle {
   font-family: Oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
-  // margin-top: 25px;
+  margin-top: 25px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.hero__img {
+  margin-left: 40px;
+  margin-top: 29px;
+}
+
+.hero__button {
+  background: #68B738;
+  width: 280px;
+  height: 40px;
+  line-height: 20px;
+  padding: 14px 0;
+  cursor: pointer;
+  align-items: center;
+  padding: 8px 44px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  margin-bottom: 20px;
 }

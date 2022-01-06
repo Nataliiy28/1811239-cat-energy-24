@@ -1,52 +1,8 @@
-.choose-program__button {
-  background: #68B738;
-  width: 335px;
-  height: 40px;
-  line-height: 20px;
-  padding: 14px 0;
-  cursor: pointer;
-  align-items: center;
-  padding: 8px 44px;
-  margin-left: 39px;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  margin-bottom: 20px;
-}
-
-.choose-program__subtitle {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  display: grid;
-  justify-content: center;
-  grid-column: 1/1;
-  grid-row: 1/ 2;
-}
-
 .choose-program__description {
-  position: relative;
-  margin-left: 8px;
-  margin-bottom: 23px;
   font-family: Arial;
-  font-style: normal;
-  // font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $special_dark-grey;
-  width: 227px;
-  height: 90px;
-  color: $special_dark-grey;
-}
-
-.choose-program {
-  margin-top: 140px;
-}
-
-.choose-program__img {
-  margin-top: 10px;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: $special_dark-grey;
 }

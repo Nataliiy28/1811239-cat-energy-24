@@ -7,7 +7,13 @@
 .footer__socials {
   display: flex;
   text-decoration: none;
-  margin-left: 100px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #D9D9D9;
+  margin-bottom: 40px;
   list-style-type: none;
 }
 
@@ -18,4 +24,8 @@
 .footer_hat-logo {
   margin-left: 140px;
   margin-bottom: 22px;
+}
+
+.footer-logo {
+  margin-bottom: 39px;
 }

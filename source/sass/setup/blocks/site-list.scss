@@ -4,8 +4,12 @@
   text-transform: uppercase;
   color: $black;
   width: 100%;
-  float: left;
+  margin: 0px;
+  padding: 0;
+}
 
+.site-list :first-child {
+  border-top: 1px solid #e6e6e6;
 }
 
 .site-list__item {
@@ -24,10 +28,15 @@
   display: block;
   text-decoration: none;
   list-style: none;
-  padding: 12px 21px;
-  padding-bottom: 13px;
-  font-size: 18px;
+  padding: 15px 21px;
+    padding-bottom: 25px;
   background-color: $white;
-  border-bottom: 1px solid #e6e6e6;
+  // border-bottom: 1px solid #e6e6e6;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
 }
-

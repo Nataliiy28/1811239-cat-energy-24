@@ -1,75 +1,25 @@
 .main-nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: 70px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   background-color: $white;
-  cursor: pointer;
+  background-image: url("../img/logo/button-closed_mobile.svg");
+  background-repeat: no-repeat;
   border: none;
-
-  &:hover,
-  &:active {
-    background-color: $white;
-  }
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
+  outline: none;
   position: absolute;
-  top: 15px;
-  left: 17px;
-  width: 36px;
-  height: 2px;
-  background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
-}
-// @include phones {
-// width: 420px;
-// }
+  right: 20px;
+  top: 24px;
 
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow:
-    0 8px 0 0 fade($black, 30%),
-    0 16px 0 0 fade($black, 30%),
-    0 32px 0 0 fade($black, 30%);
-}
-
-.main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: auto;
-  left: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 24px;
-    left: 18px;
-    width: 36px;
-    height: 2px;
-    background-color: #ffffff;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: fade(#000000, 30%);
+  @include tablets {
+    display: none;
   }
 }
 
-
+.main-nav__toggle--closed {
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("/./source/img/logo/button-closed_mobile.svg");
+}
 
 .main-nav__list {
   text-align: center;

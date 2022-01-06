@@ -1,5 +1,4 @@
 .social__button {
-  margin-left: 20px;
   text-decoration: none;
 }
 
@@ -8,8 +7,11 @@
   margin-right: 36px;
 }
 
+.social__item :first-child{
+  margin: 0;
+}
 .social__icon-cat {
-  margin-left: 96px;
+  margin-left: 20px;
   margin-top: 39px;
 }
 /*# sourceMappingURL=social.css.map */

@@ -40,3 +40,40 @@
 margin-bottom: 18px;
 
 }
+
+.products-section__subtitle {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  display: grid;
+  justify-content: center;
+  grid-column: 1/1;
+  grid-row: 1/ 2;
+}
+
+.products-section__description {
+  position: relative;
+  margin-left: 8px;
+  margin-bottom: 23px;
+  font-family: Arial;
+  font-style: normal;
+  // font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+  width: 227px;
+  height: 90px;
+  color: $special_dark-grey;
+}
+
+
+.products-section__img {
+  margin-top: 10px;
+}
+
+.products-section {
+  margin-top: 140px;
+}
