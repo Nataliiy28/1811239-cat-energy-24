@@ -18,7 +18,7 @@
         "setup/blocks/can.scss",
         "setup/blocks/explanation.scss",
         "setup/blocks/user-list.scss",
-        "setup/blocks/exemple.scss",
+        "setup/blocks/example.scss",
         "setup/blocks/slider.scss",
         "setup/blocks/social.scss",
         "setup/blocks/footer.scss"

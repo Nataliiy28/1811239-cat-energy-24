@@ -1,15 +1,21 @@
 .social__button {
-  margin-left: 20px;
   text-decoration: none;
 }
 
 .social__item {
   margin-left: 116px;
-  // justify-content: space-between;
   margin-right: 36px;
+  padding-right: 33px;
 }
 
+.social__item :first-child {
+  margin: 0px;
+}
 .social__icon-cat {
-  margin-left: 96px;
+  margin-left: 91px;
   margin-top: 39px;
+}
+
+.social__icon {
+  margin-right: 33px;
 }

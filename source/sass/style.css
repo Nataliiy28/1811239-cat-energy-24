@@ -353,13 +353,13 @@
   color: #111111;
 }
 
-.exemple {
+.example {
   background-image: url("../img/background/back_grey-life.jpeg");
   width: 100%;
   height: 700px;
 }
 
-.exemple__header {
+.example__header {
   font-family: Oswald;
   font-style: normal;
   font-weight: normal;
@@ -368,7 +368,7 @@
   color: #111111;
 }
 
-.exemple__header-explanation {
+.example__header-explanation {
   font-family: Oswald;
   font-style: normal;
   font-weight: normal;
@@ -379,7 +379,7 @@
   margin-bottom: 40px;
 }
 
-.exemple__text-regular {
+.example__text-regular {
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -390,7 +390,7 @@
   color: #444444;
 }
 
-.exemple__text {
+.example__text {
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
@@ -400,14 +400,14 @@
   text-align: center;
 }
 
-.exemple-section__plate-list {
+.example-section__plate-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
 }
 
-.exemple__caption {
+.example__caption {
   font-family: Oswald;
   font-style: normal;
   font-weight: normal;
@@ -416,7 +416,7 @@
   color: #111111;
 }
 
-.exemple-section__plate-item {
+.example-section__plate-item {
   margin-right: 32px;
 }
 

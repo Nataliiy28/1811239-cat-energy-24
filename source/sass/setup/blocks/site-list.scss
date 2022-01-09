@@ -12,6 +12,9 @@
   border-top: 1px solid #e6e6e6;
 }
 
+.site-list :last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
 .site-list__item {
   font-family: Oswald;
   list-style-type: none;
@@ -34,7 +37,6 @@
   // border-bottom: 1px solid #e6e6e6;
   font-family: Oswald;
   font-style: normal;
-  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
