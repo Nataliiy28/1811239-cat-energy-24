@@ -1,1 +1,24 @@
-// Начните писать стили здесь
+// @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import "./setup/variables";
+@import "./setup/mixins";
+@import "./setup/base";
+
+@import "./setup/blocks/products-section";
+@import "./setup/blocks/hero";
+@import "./setup/blocks/site-list";
+@import "./setup/blocks/choose-program";
+@import "./setup/blocks/button";
+@import "./setup/blocks/logo";
+@import "./setup/blocks/main-nav";
+@import "./setup/blocks/collabaration";
+@import "./setup/blocks/explanation";
+@import "./setup/blocks/user-list";
+@import "./setup/blocks/example";
+@import "./setup/blocks/slider";
+@import "./setup/blocks/social";
+@import "./setup/blocks/footer";
+@import "./setup/blocks/text-inside";
+@import "./setup/blocks/description-qualities";
+@import "./setup/blocks/catalog-list";
+@import "./setup/blocks/product-desc";
+@import "./setup/blocks/container";

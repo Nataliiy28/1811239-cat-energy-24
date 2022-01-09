@@ -1,0 +1,34 @@
+.footer {
+  background-color: $basic-grey;
+  // width: 320px;
+  // height: 236px;
+}
+
+.footer__socials {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 40px;
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.footer__develop {
+  display: flex;
+  margin-left: 19px;
+}
+.footer_hat-logo {
+  margin-left: 40px;
+  padding-left: 100px;
+  margin-bottom: 22px;
+}
+
+.footer-logo {
+  margin-bottom: 39px;
+}
