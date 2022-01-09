@@ -1,0 +1,100 @@
+.example {
+  background-image: url("../img/background/back_grey-life.jpeg");
+  width: 100%;
+}
+
+.example-section {
+  margin: 0px;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.example__header {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
+.example__header-explanation {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.example__text-regular {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  width: 280px;
+  height: 108px;
+  color: $special_dark-grey;
+  margin-left: 20px;
+}
+
+.example-item {
+  margin: 0px;
+}
+
+.example__text {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: $special_dark-grey;
+  margin-top: 0px;
+  text-align: center;
+  position: absolute;
+  text-align: center;
+  background: #eaeaea;
+  bottom: -22px;
+  margin: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 5px;
+}
+
+.example__caption {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+}
+.example-section__plate {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.example-section__plate-item {
+  margin-right: 26px;
+  border: 1px solid $special_grey;
+  border-radius: 4px;
+  position: relative;
+  flex: 1;
+}
+
+.example-section__plate-list {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+}
