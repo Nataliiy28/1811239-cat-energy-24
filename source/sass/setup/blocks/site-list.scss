@@ -6,14 +6,25 @@
   width: 100%;
   margin: 0px;
   padding: 0;
+
+  @include tablets {
+  }
 }
 
 .site-list :first-child {
   border-top: 1px solid #e6e6e6;
+
+  @include tablets {
+    border-top: 0px;
+  }
 }
 
 .site-list :last-child {
   border-bottom: 1px solid #e6e6e6;
+
+  @include tablets {
+    border-bottom: 0px;
+  }
 }
 .site-list__item {
   font-family: Oswald;
@@ -32,13 +43,20 @@
   text-decoration: none;
   list-style: none;
   padding: 15px 21px;
-    padding-bottom: 25px;
+  padding-bottom: 25px;
   background-color: $white;
-  // border-bottom: 1px solid #e6e6e6;
   font-family: Oswald;
   font-style: normal;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+
+  @include tablets {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

@@ -4,6 +4,11 @@
 
 .explanation {
   margin-top: 20px;
+
+  @include tablets {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 93px 230px 230px;
+  }
 }
 
 .explanation__header {
@@ -13,9 +18,18 @@
   font-size: 36px;
   line-height: 40px;
   margin-left: 41px;
+
+  @include tablets {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .explanation-section__img {
+  @include tablets {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .explanation-section {

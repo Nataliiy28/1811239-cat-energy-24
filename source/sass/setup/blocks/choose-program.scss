@@ -11,4 +11,12 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+
+  @include tablets {
+    font-size: 16px;
+    line-height: 24px;
+    color: $special_dark-grey;
+    width: 201px;
+    height: 72px;
+  }
 }
