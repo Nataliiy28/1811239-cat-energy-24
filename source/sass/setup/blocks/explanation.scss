@@ -22,6 +22,8 @@
   @include tablets {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 0px;
+    margin-top: 45px;
   }
 }
 
@@ -29,15 +31,31 @@
   @include tablets {
     width: 80px;
     height: 80px;
+    margin-bottom: 31px;
+    display: flex;
   }
 }
 
 .explanation-section {
   display: block;
+
+  @include tablets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 291px 282px;
+    // margin-bottom: 65px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 101px;
+  }
 }
 
 .explanation-item {
   display: flex;
+
+  @include tablets {
+    margin-top: 72px;
+    flex-direction: column;
+  }
 }
 
 .explanation-description {
@@ -46,4 +64,11 @@
   width: 176px;
   height: 54px;
   margin-bottom: 20px;
+
+  @include tablets {
+    width: 176px;
+    height: 54px;
+    margin-bottom: 91px;
+    margin-left: 0px;
+  }
 }

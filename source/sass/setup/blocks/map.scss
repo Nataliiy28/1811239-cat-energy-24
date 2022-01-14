@@ -1,3 +1,16 @@
 .map {
   width: 100%;
+
+  @include tablets {
+    width: 100%;
+    background-image: url("../img/map/map-tablets.svg");
+  }
+}
+
+.map__inner-img {
+  width: 100%;
+
+  @include tablets {
+    width: 100%;
+  }
 }

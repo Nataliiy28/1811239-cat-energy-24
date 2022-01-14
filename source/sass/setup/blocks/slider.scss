@@ -1,9 +1,22 @@
 .slider {
   margin-left: 55px;
   margin-bottom: 40px;
+
+  @include tablets {
+    width: 592px;
+    height: 40px;
+  }
 }
 
 .slider__background-img {
   margin-left: 23px;
   margin-bottom: 15px;
+
+  @include tablets {
+    width: 592px;
+    height: 511px;
+    margin-top: 80px;
+    margin-left: 87px;
+    background-image: url("../img/background/background-grey.svg");
+  }
 }

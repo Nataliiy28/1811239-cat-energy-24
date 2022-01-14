@@ -1,7 +1,10 @@
 .footer {
   background-color: $basic-grey;
-  // width: 320px;
-  // height: 236px;
+
+  @include tablets {
+    display: flex;
+    justify-content: stretch;
+  }
 }
 
 .footer__socials {
@@ -17,6 +20,10 @@
   margin-bottom: 40px;
   list-style-type: none;
   padding-left: 30px;
+
+  @include tablets {
+    padding: 41px 0;
+  }
 }
 
 .footer__develop {
@@ -27,8 +34,23 @@
   margin-left: 40px;
   padding-left: 100px;
   margin-bottom: 22px;
+
+  @include tablets {
+    padding-left: 19px;
+    margin-bottom: 21px;
+  }
 }
 
 .footer-logo {
   margin-bottom: 39px;
+}
+
+.footer__row {
+display: block;
+
+  @include tablets {
+    display: flex;
+  }
+
+
 }
