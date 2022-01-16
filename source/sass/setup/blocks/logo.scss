@@ -14,5 +14,10 @@
     padding: 0;
     margin: 0;
     margin-top: 24px;
+
+    @include desktop {
+      margin-left: 110px;
+      margin-top: 53px;
+    }
   }
 }

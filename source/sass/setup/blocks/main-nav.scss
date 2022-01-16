@@ -39,4 +39,9 @@
     margin-right: 15px;
     margin-top: 14px;
   }
+
+  @include desktop {
+    margin-top: 69px;
+    margin-right: 110px;
+  }
 }
