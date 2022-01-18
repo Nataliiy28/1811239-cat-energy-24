@@ -1,6 +1,11 @@
 .products-section {
   margin: 0px;
   padding: 0px;
+
+  @include desktop {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 .products-section__img {
   position: relative;
@@ -45,6 +50,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 3/2;
+  }
+
+  @include desktop {
+    margin-right: 80px;
+    margin-left: 90px;
   }
 }
 
@@ -114,6 +124,8 @@
     line-height: 24px;
     margin-left: 23px;
     color: $black;
+    border-bottom: none;
+    padding-bottom: 0px;
   }
 }
 

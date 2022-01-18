@@ -15,6 +15,18 @@
     background-image: url("../img/background/full-back.jpeg");
     z-index: -1;
   }
+
+  @include desktop {
+    content: "";
+    display: block;
+    width: 720px;
+    height: 694px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/background/full-back_desktop.png");
+    z-index: -1;
+  }
 }
 .header__top {
   list-style: none;
@@ -93,6 +105,11 @@
       width: 709px;
       height: 609px;
     }
+  }
+
+  @include desktop {
+    width: 552px;
+    height: 499px;
   }
 }
 

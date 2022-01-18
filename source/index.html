@@ -13,7 +13,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body class="page-body">
   <header class="header">
     <div class="header__top">
@@ -49,9 +48,14 @@
     </div>
   </header>
   <section class="hero">
-    <h1 class="hero__title">Функциональное &nbsp;питание для котов</h1>
-    <h2 class="hero__subtitle">Занялся собой? Займись котом!</h2>
+    <h2 class="hero__title">Функциональное &nbsp;питание для котов</h2>
+    <h3 class="hero__subtitle">Занялся собой? Займись котом!</h3>
+    <picture>
+      <source media="(min-width: 1150px)" srcset="./img/background/can-desktop.png" type="image/svg+xml">
+      <source media="(min-width: 768px)" srcset="./img/background/can-tablet.png" type="image/svg+xml">
+      <source media="(min-width: 320px)" srcset="./img/background/can-mobile.svg" type="image/svg+xml">
     <img class="hero__img" src="./img/background/can-mobile.svg" width="280" height="270" alt="банка с кошачьим кормом">
+    </picture>
     <button class="hero__button button" type="button">подобрать программу</button>
   </section>
   <section class="choose-program">
@@ -107,7 +111,7 @@
   </div>
   <div class="example container">
     <article class="example-section">
-      <h1 class="example__header">Живой пример</h1>
+      <h2 class="example__header">Живой пример</h2>
       <p class="example__text-regular">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
         Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -183,7 +187,6 @@
         <li class="socials__item social">
           <a class="social__button" href="#" aria-label="фейсбук"></a>
           <img class="social__icon" src="./img/sotial/icon_facebook.svg" width="23" height="22" alt="facebook icon">
-          </a>
         </li>
       </ul>
       <div class="footer__develop develop">
