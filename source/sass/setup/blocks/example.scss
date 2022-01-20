@@ -5,6 +5,10 @@
   @include tablets {
     background-image: none;
   }
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .example-section {

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy:Кэт энерджи.Подбор программы</title>
+  <link rel="icon" href="./img/favicon/favicon_32.ico">
+  <link rel="icon" href="./img/favicon/32.svg" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon/favicon_32.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="page-body">
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <nav class="main-nav main-nav--closed  main-nav--nojs">
+          <a class="header__logo logo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="./img/logo/logo-catenergy-desktop.svg" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="./img/logo/logo-catenergy-tablet.svg" type="image/svg+xml">
+              <source media="(min-width: 320px)" srcset="./img/logo/logo-catenergy-mobile.svg" type="image/svg+xml">
+              <img class="logo__picture" src="./img/logo/logo-catenergy-mobile.svg" width="191" height="38"
+                alt="Логотип сайта">
+            </picture>
+          </a>
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+            <span class="visually-hidden"></span></button>
+          <!-- Открыть меню -->
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">каталог продукции</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div>
+     <section class="choose-program__form-page">
+    <h1 class="choose-program__title">Подбор программы</h1>
+    <h2 class="application-form">Заполните анкету, и мы подберем
+      программу питания для вашего кота</h2>
+      <form action="" method="post">
+        <ul class="application-form__list">
+          <li class="application-form__item">
+            <label for="name">Имя:*</label>
+            <input type="text" id="name" name="user_name">
+          </li>
+          <li class="application-form__item">
+            <label for="mail">Вес (кг):*</label>
+            <input type="email" id="mail" name="user_mail">
+          </li>
+          <li class="application-form__item">
+            <label for="msg">Возраст (лет):</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+        </ul>
+      </form>
+  </section>
+  </div>
+
+  <section class="choose-program__input">
+    <label class="choose-program__input-item"><input class="choose-program__radio" type="radio"/>похудение</label>
+    <label class="choose-program__input-item"><input class="choose-program__radio" type="radio"/>Набор массы</label>
+    <label class="choose-program__input-item"><input class="choose-program__radio" type="radio"/>Не знаю (Нужен ваш совет)</label>
+  </section>
+  <section class="contact-information">
+    <h3 class="contact-information__title">Контактные данные
+      (владельца кота)</h3>
+      <form action="" method="post">
+        <ul>
+          <li>
+            <label for="mail">E-mail:*</label>
+            <input type="email" id="mail" name="user_mail">
+          </li>
+          <li>
+            <label for="phone">Телефон:*</label>
+            <input type="text" id="name" name="user_name">
+          </li>
+        </ul>
+      </form>
+<h4>Комментарий</h4>
+<p>Расскажите обо всех повадках кота</p>
+  </section>
+<section>
+  <h3>Дополнительно</h3>
+  <label><input type="checkbox"/>сахарозаменитель</label>
+  <label><input type="checkbox"/>питьевая вода</label>
+  <label><input type="checkbox"/>молоко</label>
+  <label><input type="checkbox"/>витамины</label>
+  <button class="hero__button button" type="button">отправить заявку</button>
+</section>
+<div class="collabaration">
+  <p class="collabaration__rigit-text">приглашаем к сотрудничеству дилеров!</p>
+  <p class="collabaration__left-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+</div>
+<div class="map">
+  <div class="map__inner">
+    <picture>
+      <source media="(min-width: 1150px)" srcset="./img/map/map-descktop.jpeg" type="image/svg+xml">
+      <source media="(min-width: 768px)" srcset="./img/map/map-tablet.jpeg" type="image/svg+xml">
+      <source media="(min-width: 320px)" srcset="./img/map/map-mobile.jpeg" type="image/svg+xml">
+      <img class="map__inner-img" src="./img/map/map-mobile.jpeg" alt="карта фото">
+      <!-- <iframe src="https:https://www.google.com/maps/place/%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D1%82%D0%B5%D0%B0%D1%82%D1%80,+%D0%BF%D0%BB.+%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2,+1,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.937868,30.329148,17z/data=!4m6!1m3!3m2!1s0x4696310edbef855b:0xee3abe449bc142d7!2z0JzQuNGF0LDQudC70L7QstGB0LrQuNC5INGC0LXQsNGC0YAsINC_0LsuINCY0YHQutGD0YHRgdGC0LIsIDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!3m1!1s0x4696310edbef855b:0xee3abe449bc142d7"
+   style="border: 0;" allowfullscreen="" loading="lazy"></iframe> -->
+    </picture>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-logo">
+    <span class="socials__item social">
+      <a class="social__button" href="#" aria-label="Лого Кэт Энерджи">
+        <img class="social__icon-cat" src="./img/logo/footer_text-logo.svg" width="128" height="24"
+          alt="logo cat anergy">
+      </a>
+    </span>
+  </div>
+  <div class="footer__row">
+    <ul class="footer__socials socials">
+      <li class="socials__item social">
+        <a class="social__button" href="#" aria-label="вконтакте">
+          <img class="social__icon" src="./img/sotial/icon_vkontakte.svg" width="23" height="16" alt="vkontakte icon">
+        </a>
+      </li>
+      <li class="socials__item social">
+        <a class="social__button" href="#" aria-label="инстаграм">
+          <img class="social__icon" src="./img/sotial/icon_instagram.svg" width="23" height="22"
+            alt="instagramm icon">
+        </a>
+      </li>
+      <li class="socials__item social">
+        <a class="social__button" href="#" aria-label="фейсбук"></a>
+        <img class="social__icon" src="./img/sotial/icon_facebook.svg" width="23" height="22" alt="facebook icon">
+      </li>
+    </ul>
+    <div class="footer__develop develop">
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="develop__logo">
+        <img src="./img/logo/html_text_footer-logo.svg" width="114" height="18" alt="logo_htmlacademy tex"></a>
+
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="develop__logo-icon">
+        <img class="footer-logo__hat" src="./img/logo/footer_hat-logo.svg" width="27" height="34"
+          alt="logo_htmlacademy hat"></a>
+    </div>
+  </div>
+  <!-- 1 -->
+</footer>
+</body>
+</html>

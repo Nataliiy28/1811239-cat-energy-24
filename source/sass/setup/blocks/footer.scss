@@ -5,6 +5,11 @@
     display: flex;
     justify-content: stretch;
   }
+
+  @include desktop {
+    display: flex;
+    // justify-content: space-between;
+  }
 }
 
 .footer__socials {
@@ -30,6 +35,13 @@
     margin-left: 78px;
     padding-left: 78px;
   }
+
+  @include desktop {
+    margin-left: 132px;
+    padding-left: 174px;
+    padding-top: 56px;
+    padding-bottom: 58px;
+  }
 }
 
 .footer__develop {
@@ -43,7 +55,14 @@
     margin-left: 65px;
     padding-left: 66px;
   }
+
+  @include desktop {
+    margin-top: 72px;
+    margin-left: 151px;
+    padding-left: 145px;
 }
+  }
+
 .footer-logo__hat {
   padding-left: 100px;
   margin-bottom: 22px;
@@ -57,12 +76,23 @@
 
 .footer-logo {
   margin-bottom: 39px;
+
+  @include desktop {
+    margin-bottom: 57px;
+    margin-left: 110px;
 }
+  }
+
 
 .footer__row {
   display: block;
 
   @include tablets {
     display: flex;
+  }
+
+  @include desktop {
+    // display: flex;
+    // justify-content: space-around;
   }
 }

@@ -1,0 +1,25 @@
+.application-form {
+  font-family: Oswald;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.application-form__item {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  margin-bottom: 15px;
+}
+
+.application-form__list {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 28px;
+  margin-top: 42px;
+}

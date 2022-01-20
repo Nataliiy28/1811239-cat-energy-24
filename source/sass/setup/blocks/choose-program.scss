@@ -4,8 +4,17 @@
   padding-top: 20px;
 
   @include desktop {
-
   }
+}
+
+.choose-program__form-page {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  border-top: 1px  solid #e6e6e6 ;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 22px
+
 }
 
 .choose-program__description {
@@ -23,4 +32,33 @@
     // width: 201px;
     // height: 72px;
   }
+}
+
+.choose-program__title {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.choose-program__input {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  display: grid;
+  margin-bottom: 26px;
+}
+
+.choose-program__input-item {
+  margin-bottom: 20px;
+}
+
+.choose-program__radio{
+  margin-right: 15px;
+  margin-left: 20px;
 }

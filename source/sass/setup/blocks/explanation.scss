@@ -1,5 +1,9 @@
 .explanation-section {
   text-decoration: none;
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .explanation {
@@ -34,6 +38,10 @@
     margin-bottom: 31px;
     display: flex;
   }
+
+  @include desktop {
+    margin-bottom: 0px;
+  }
 }
 
 .explanation-section {
@@ -46,6 +54,14 @@
     // margin-bottom: 65px;
     border-bottom: 1px solid #e6e6e6;
     padding-bottom: 101px;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -70,5 +86,12 @@
     height: 54px;
     margin-bottom: 91px;
     margin-left: 0px;
+  }
+
+  @include desktop {
+    width: 201px;
+    height: 72px;
+    margin-top: 31px;
+    margin-bottom: 83px;
   }
 }
