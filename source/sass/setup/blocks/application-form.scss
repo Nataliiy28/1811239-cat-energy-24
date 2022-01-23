@@ -4,6 +4,18 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  color: $black;
+
+  @include tablets {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin-left: 70px;
+    padding-bottom: 23px;
+  }
 }
 
 .application-form__item {
@@ -22,4 +34,15 @@
   padding-left: 0px;
   margin-bottom: 28px;
   margin-top: 42px;
+  color: $special_dark-grey;
+
+  @include tablets {
+    padding-left: 71px;
+    padding-bottom: 72px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

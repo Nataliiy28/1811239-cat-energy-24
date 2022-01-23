@@ -11,10 +11,14 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
-  border-top: 1px  solid #e6e6e6 ;
+  border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 22px
+  margin-bottom: 22px;
 
+  @include tablets {
+    border-top: 0px;
+    border-bottom: 0px;
+  }
 }
 
 .choose-program__description {
@@ -40,6 +44,15 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+
+  @include tablets {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 69px;
+  }
 }
 
 .choose-program__input {
@@ -52,13 +65,33 @@
   color: $special_dark-grey;
   display: grid;
   margin-bottom: 26px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @include tablets {
+    border-top: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    margin-left: 0px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 36px;
+    padding-bottom: 30px;
+  }
 }
 
 .choose-program__input-item {
   margin-bottom: 20px;
+
+  @include tablets {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.choose-program__radio{
+.choose-program__radio {
   margin-right: 15px;
   margin-left: 20px;
 }
