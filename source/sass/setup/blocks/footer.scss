@@ -37,10 +37,12 @@
   }
 
   @include desktop {
-    margin-left: 132px;
-    padding-left: 174px;
-    padding-top: 56px;
-    padding-bottom: 58px;
+    // margin-left: 132px;
+    // padding-left: 174px;
+    // padding-top: 56px;
+    // padding-bottom: 58px;
+    margin-left: auto;
+    padding: 0;
   }
 }
 
@@ -57,9 +59,13 @@
   }
 
   @include desktop {
+    // margin-top: 72px;
+    // margin-left: 151px;
+    // padding-left: 145px;
+
     margin-top: 72px;
-    margin-left: 151px;
-    padding-left: 145px;
+    margin-left: auto;
+    padding: 0;
 }
   }
 
@@ -92,7 +98,8 @@
   }
 
   @include desktop {
-    // display: flex;
-    // justify-content: space-around;
+    display: flex;
+    margin-left: auto;
+    flex: 1;
   }
 }

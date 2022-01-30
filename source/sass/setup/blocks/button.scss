@@ -22,6 +22,27 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  color:$white;
+  color: $white;
   text-transform: uppercase;
+  display: block;
+  background: #68b738;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 8px 44px;
+  border: 0;
+
+  @include tablets {
+    display: inline-block;
+    padding: 22px 44px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @include desktop {
+    margin-top: 52px;
+    margin-left: 197px;
+    position: static;
+    display: block;
+    padding: 17px 27px;
+  }
 }

@@ -13,4 +13,8 @@
   @include tablets {
     width: 100%;
   }
+
+  @include desktop {
+    max-width: 100%;
+  }
 }

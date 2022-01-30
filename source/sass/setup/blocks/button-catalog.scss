@@ -1,17 +1,18 @@
 .button-catalog {
   width: 279px;
   height: 40px;
-  background: #f2f2f2;
+
   display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 16px;
   line-height: 20px;
-  padding: 14px 0;
   cursor: pointer;
-  align-items: center;
-  padding: 22px 91px;
+  padding: 22px 107px;
   margin-left: 39px;
   border: 0px;
   margin-bottom: 30px;
+  color: $white;
 }
