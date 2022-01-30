@@ -8,6 +8,8 @@
 
   @include desktop {
     display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -38,6 +40,10 @@
     padding-top: 0px;
     margin-top: 43px;
     margin-bottom: 63px;
+  }
+
+  @include desktop {
+    padding-left: 136px;
   }
 }
 
@@ -79,6 +85,15 @@
     margin-left: 30px;
     margin-bottom: 54px;
     height: 0;
+  }
+
+  @include desktop {
+    width: 406px;
+    margin-left: 135px;
+    margin-bottom: 113px;
+    padding-top: 82px;
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 
@@ -138,6 +153,14 @@
     margin-top: 0px;
     padding-left: 14px;
     background-color: $white;
+  }
+
+  @include desktop {
+    display: initial;
+    margin-left: 103px;
+    padding-top: 51px;
+    margin-top: 0px;
+    padding-left: 14px;
   }
 }
 .example-section__plate-item {
