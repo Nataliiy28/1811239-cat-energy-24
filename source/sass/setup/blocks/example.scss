@@ -30,7 +30,8 @@
 
 .example-section_cat {
   @include desktop {
-    padding-left: 220px;
+    margin-left: auto;
+    width: min-content;
   }
 }
 .example__header {

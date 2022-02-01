@@ -9,6 +9,12 @@
 
   @include desktop {
     padding-top: 269px;
+    max-width: 1220px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

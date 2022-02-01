@@ -7,9 +7,6 @@
   margin: 0px;
   padding: 0;
 
-  @include tablets {
-
-  }
 }
 
 // .site-list:active {
@@ -31,6 +28,7 @@
     border-bottom: 0px;
   }
 }
+
 .site-list__item {
   font-family: Oswald;
   list-style-type: none;
@@ -82,6 +80,10 @@
     border-bottom: 2px solid $basic-green;
   }
   color: rgba($color: #000000, $alpha: 0.6);
+
+  @include desktop {
+    border-bottom: 2px solid $white;
+  }
 }
 
 .site-list__link:active {
@@ -92,5 +94,9 @@
   @include tablets {
     border-bottom: 2px solid $basic-green;
     color: $black;
+  }
+
+  @include desktop{
+    border-bottom: 2px solid $white;
   }
 }
