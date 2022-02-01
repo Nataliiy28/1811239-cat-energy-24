@@ -1,0 +1,27 @@
+.desktop-site__list {
+  @include desktop {
+    font-size: 20px;
+    line-height: 30px;
+    color: $white;
+  }
+}
+
+.desktop-site__list:active {
+  @include desktop{
+     border-bottom: 2px solid #ffffff;
+  margin: 3px;
+  color: $white;
+  }
+
+}
+
+.desktop-site__list:hover {
+  @include desktop{
+  color: rgba($color: $white, $alpha: 6.0);
+}
+}
+.desktop-site__list:hover::before {
+  @include desktop{
+  color: rgba($color: $white, $alpha: 3.0);
+}
+}

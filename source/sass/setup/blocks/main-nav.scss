@@ -15,7 +15,6 @@
   border: none;
   outline: none;
   position: absolute;
-
   right: 27px;
   top: 37px;
 
@@ -39,6 +38,8 @@
     display: flex;
     margin-right: 15px;
     margin-top: 14px;
+    padding-top: 42px;
+    padding-right: 30px;
   }
 
   @include desktop {

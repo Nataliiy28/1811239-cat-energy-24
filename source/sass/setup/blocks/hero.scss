@@ -3,6 +3,11 @@
   position: relative;
   padding: 0 20px;
 
+  @include tablets {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
   @include desktop {
     position: static;
   }
@@ -32,7 +37,8 @@
     height: 696px;
     position: absolute;
     top: 0px;
-    right: 0px;
+    // right: 0px;
+    right: 0;
     left: auto;
     background-image: url("../img/background/full-back_desktop.png");
     z-index: -1;

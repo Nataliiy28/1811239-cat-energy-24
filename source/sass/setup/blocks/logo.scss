@@ -14,14 +14,23 @@
     margin: 0;
     margin-top: 24px;
     width: 174px;
-    height: 52.68px;
-    padding-left: 30px;
+    height: 53px;
+    padding-left: 61px;
+    padding-top: 31px;
   }
 
   @include desktop {
     width: 199px;
     height: 58px;
-    margin-left: 109px;
-    margin-top: 54px;
+    margin-left: 78px;
+    margin-top: 64px;
   }
+}
+
+.logo__picture:hover {
+  opacity: 0.8;
+}
+
+.logo__picture:active {
+  opacity: 0.6;
 }

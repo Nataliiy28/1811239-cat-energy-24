@@ -11,10 +11,29 @@
   position: relative;
   margin-left: 10px;
   margin-bottom: 22px;
-  margin-top: -71px;
+  // margin-top: -71px;
   grid-column: 1/1;
   grid-row: 1/1;
   padding-top: 14px;
+  margin-top: 10px;
+
+  @include tablets {
+    object-fit: contain;
+    object-position: bottom;
+    margin-top: 18px;
+    grid-column: 4;
+    grid-row: 1/4;
+    width: 268px;
+    height: 211px;
+    padding-left: 23px;
+  }
+
+  @include desktop {
+    width: 134px;
+    height: 100px;
+    padding-left: 14px;
+    grid-column: 1;
+  }
 }
 
 .products-section__img :last-child {
@@ -35,6 +54,7 @@
   color: $black;
   padding-right: 159px;
   padding-bottom: 12px;
+
   @include tablets {
     grid-column-start: 1;
     grid-row-start: 4;
@@ -42,6 +62,14 @@
     margin-left: 0px;
     padding-left: 24px;
   }
+
+  @include desktop {
+    padding-right: 0px;
+  }
+}
+
+.products-section__text:active {
+  color: rgba($color: $black, $alpha: 0.3);
 }
 
 .products-section__text :last-child {
@@ -58,20 +86,16 @@
   @include tablets {
     height: 372px;
     display: grid;
-    grid-template-columns: 400px 1fr 1fr 1fr;
     grid-column: 3/2;
     grid-template-rows: 90px 180px 40px 50px;
-
+    grid-template-columns: 342px 25px 25px 298px;
   }
 
   @include desktop {
     margin-right: 80px;
     margin-left: 90px;
-
-    grid-template-columns: 583px 1fr 1fr 1fr;
-    grid-column: 3/2;
-    grid-template-rows: 69px 181px 39px 50px;
-
+    grid-template-columns: 171px 403px;
+    grid-template-rows: 104px 186px 45px 50px;
   }
 }
 
@@ -88,10 +112,12 @@
 
 .products-section__link {
   text-decoration: none;
-  // margin-bottom: 20px;
   margin-bottom: 0px;
 }
 
+.products-section__link:active {
+  color: rgba($color: #000000, $alpha: 3.0);
+}
 .products-section__img-line {
   margin-bottom: 18px;
 }
@@ -121,6 +147,12 @@
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 1;
+  }
+
+  @include desktop {
+    grid-column: 2;
+    padding-right: 31px;
+    margin-left: 48px;
   }
 }
 
@@ -160,17 +192,9 @@
     grid-row-end: 3;
     width: 340px;
   }
-}
 
-.products-section__img {
-  margin-top: 10px;
-
-  @include tablets {
-    width: 268px;
-    height: 200px;
-    object-fit: cover;
-    object-position: bottom;
-    margin-top: 78px;
-    // margin-left: 387px;
+  @include desktop {
+    grid-row: 2;
+    margin-top: 66px;
   }
 }

@@ -22,6 +22,16 @@
   @include tablets {
     // background-image: url("../img/background/back_grey-life.jpeg");
   }
+
+  @include desktop {
+    // padding-left: 250px;
+  }
+}
+
+.example-section_cat {
+  @include desktop {
+    padding-left: 220px;
+  }
 }
 .example__header {
   font-family: Oswald;
@@ -40,6 +50,7 @@
     padding-top: 0px;
     margin-top: 43px;
     margin-bottom: 63px;
+    margin-left: 21px;
   }
 
   @include desktop {
@@ -59,12 +70,17 @@
   margin-top: 20px;
   padding-top: 20px;
 
-
   @include tablets {
     font-size: 20px;
-    line-height: 20px;
-    margin-left: 72px;
+    line-height: 30px;
+    margin-left: 168px;
     margin-top: 1px;
+    text-align: end;
+  }
+
+  @include desktop {
+    margin-left: 134px;
+    text-align: left;
   }
 }
 
@@ -82,7 +98,7 @@
   @include tablets {
     width: 706px;
     margin-top: 0px;
-    margin-left: 30px;
+    margin-left: 41px;
     margin-bottom: 54px;
     height: 0;
   }
@@ -121,6 +137,11 @@
   @include tablets {
     background-color: $white;
   }
+
+  @include desktop {
+    bottom: -9px;
+    white-space: nowrap;
+  }
 }
 
 .example__caption {
@@ -147,12 +168,11 @@
   @include tablets {
     display: flex;
     justify-content: space-around;
-    margin-left: 0px;
-    margin-left: 0px;
     padding-top: 54px;
     margin-top: 0px;
-    padding-left: 14px;
     background-color: $white;
+    padding-left: 0px;
+    margin-left: 30px;
   }
 
   @include desktop {
@@ -187,5 +207,11 @@
 
   @include tablets {
     margin-left: 14px;
+  }
+
+  @include desktop {
+    margin-left: 137px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
   }
 }

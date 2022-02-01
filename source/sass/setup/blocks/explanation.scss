@@ -3,6 +3,7 @@
 
   @include desktop {
     display: flex;
+    counter-reset: number 0;
   }
 }
 
@@ -75,11 +76,42 @@
   display: flex;
 
   @include tablets {
+    position: relative;
     margin-top: 72px;
     flex-direction: column;
+    counter-increment: number;
   }
 }
 
+.explanation-item::before {
+  content: counter(number);
+  font-family: Oswald;
+  font-size: 280px;
+  line-height: 280px;
+  color: #f2f2f2;
+  position: absolute;
+  right: 244px;
+  top: -30px;
+  font-weight: normal;
+  z-index: -1;
+
+  @include tablets {
+    right: 133px;
+  }
+
+  @include desktop {
+    content: counter(number);
+    font-family: Oswald;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    position: absolute;
+    left: 108px;
+    top: -33px;
+    font-weight: normal;
+    z-index: -1;
+  }
+}
 .explanation-description {
   display: flex;
   margin-left: 20px;
@@ -88,10 +120,9 @@
   margin-bottom: 20px;
 
   @include tablets {
-    width: 176px;
-    height: 54px;
     margin-bottom: 91px;
     margin-left: 0px;
+    width: 245px;
   }
 
   @include desktop {

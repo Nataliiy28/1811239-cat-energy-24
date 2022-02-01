@@ -8,8 +8,13 @@
   padding: 0;
 
   @include tablets {
+
   }
 }
+
+// .site-list:active {
+//   //  border-bottom: 2px solid $basic-green;
+// }
 
 .site-list :first-child {
   border-top: 1px solid #e6e6e6;
@@ -38,19 +43,22 @@
 }
 
 .site-list__link {
+  float: left;
   position: relative;
   display: block;
+  color: #000000;
+  text-align: center;
   text-decoration: none;
   list-style: none;
   padding: 15px 21px;
-  padding-bottom: 25px;
+  // padding-bottom: 5px;
   background-color: $white;
   font-family: Oswald;
   font-style: normal;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  border-bottom: 3px solid transparent;
 
   @include tablets {
     font-family: Oswald;
@@ -58,6 +66,7 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    color: $black;
   }
 
   @include desktop {
@@ -65,5 +74,23 @@
     line-height: 30px;
     color: $white;
     background-color: transparent;
+  }
+}
+
+.site-list__link:hover {
+  @include tablets {
+    border-bottom: 2px solid $basic-green;
+  }
+  color: rgba($color: #000000, $alpha: 0.6);
+}
+
+.site-list__link:active {
+  color: $black;
+  border-bottom: 2px solid #68b738;
+  margin: 8px;
+
+  @include tablets {
+    border-bottom: 2px solid $basic-green;
+    color: $black;
   }
 }
