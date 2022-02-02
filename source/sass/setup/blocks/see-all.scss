@@ -1,5 +1,10 @@
-.button-catalog {
-  width: 100%;
+.see-all {
+  background-color: $basic-grey;
+  color: $special_dark-grey;
+}
+
+.see-all__button {
+  width: 279px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -9,21 +14,18 @@
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
-  padding: 22px 81px;
+  padding: 22px 91px;
   margin-left: 39px;
   border: 0px;
   margin-bottom: 30px;
-  color: $white;
-  background-color: $basic-green;
   margin-top: 26px;
-  margin-left: 20px;
-  margin-right: 20px;
+  color: $special_dark-grey;
 }
 
-.button-catalog:hover {
-  background-color: $basic_green-dark;
+.see-all__button:hover {
+background-color: $special-grey-light;
 }
-.button-catalog:active {
-  background-color: $basic_green-dark;
+
+.see-all__button:active {
   color: rgba($color: $white, $alpha: 0.3);
 }

@@ -9,8 +9,8 @@
 // color: rgba($color:$basic-green , $alpha: 1.0);
 
 .social__button:active {
-  stroke: red;
-  fill: red;
+  stroke: rgb(60, 255, 0);
+  fill: rgb(81, 255, 0);
 }
 // color: rgba($color: $basic-green, $alpha: 0.3);
 
@@ -31,8 +31,7 @@
   @include tablets {
     padding-left: 0px;
     margin-left: 30px;
-    margin-top: 63px;
-    margin-bottom: 26px;
+    margin: 0;
   }
 }
 

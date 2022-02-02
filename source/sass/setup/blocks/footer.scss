@@ -3,7 +3,10 @@
 
   @include tablets {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 60px;
   }
 
   @include desktop {
@@ -51,10 +54,10 @@
   margin-left: 19px;
 
   @include tablets {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 65px;
-    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-left: auto ;
     padding-left: 66px;
   }
 
@@ -75,9 +78,11 @@
   margin-left: 82px;
 
   @include tablets {
-    margin-left: 0px;
+    margin: 0;
+    // margin-left: 0px;
     padding-left: 29px;
   }
+
 }
 
 .footer-logo {
@@ -95,6 +100,8 @@
 
   @include tablets {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   @include desktop {

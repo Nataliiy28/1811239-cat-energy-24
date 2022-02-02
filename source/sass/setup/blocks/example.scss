@@ -3,7 +3,7 @@
   width: 100%;
 
   @include tablets {
-    background-image: none;
+    background-image: linear-gradient(0deg, #EAEAEA 462px, $white 20%);
   }
 
   @include desktop {

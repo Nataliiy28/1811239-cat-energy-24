@@ -1,0 +1,31 @@
+.extra-product {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.extra-product__title {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+}
+
+.extra-product__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.extra-product__link {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $grafit-grey;
+  display: block;
+}

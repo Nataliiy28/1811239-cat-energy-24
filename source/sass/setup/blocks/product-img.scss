@@ -1,0 +1,9 @@
+.product-img__catalog-img {
+  margin-top: 34px;
+  margin-left: 26px;
+  margin-bottom: 35px;
+
+  @include tablets {
+    margin-left: 85px;
+  }
+}
