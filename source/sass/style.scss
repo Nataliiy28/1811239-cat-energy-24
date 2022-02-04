@@ -23,8 +23,8 @@
 @import "./setup/blocks/container";
 @import "./setup/blocks/application-form";
 @import "./setup/blocks/contact-information";
-@import "./setup/blocks/comment.scss";
-@import "./setup/blocks/catalog.scss";
+@import "./setup/blocks/comment";
+@import "./setup/blocks/catalog";
 @import "./setup/blocks/title-catalog";
 @import "./setup/blocks/header";
 @import "./setup/blocks/map";
@@ -34,3 +34,6 @@
 @import "./setup/blocks/see-all";
 @import "./setup/blocks/extra-product";
 @import "./setup/blocks/product-img";
+@import "./setup/blocks/radio";
+@import "./setup/blocks/label-input";
+@import "./setup/blocks/checkbox";

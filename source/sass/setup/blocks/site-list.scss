@@ -1,5 +1,5 @@
 .site-list {
-  font-family: Oswald;
+  font-family: $font-stack;
   text-decoration: none;
   text-transform: uppercase;
   color: $black;
@@ -29,7 +29,7 @@
 }
 
 .site-list__item {
-  font-family: Oswald;
+  font-family: $font-stack;
   list-style-type: none;
   font-style: normal;
   font-weight: bold;
@@ -48,7 +48,7 @@
   list-style: none;
   padding: 15px 21px;
   background-color: $white;
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-size: 20px;
   line-height: 20px;
@@ -56,7 +56,7 @@
   border-bottom: 3px solid transparent;
 
   @include tablets {
-    font-family: Oswald;
+    font-family: $font-stack;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -106,7 +106,7 @@
   list-style: none;
   padding: 15px 21px;
   background-color: $white;
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-size: 20px;
   line-height: 20px;
@@ -114,7 +114,7 @@
   border-bottom: 3px solid $basic-green;
 
   @include tablets {
-    font-family: Oswald;
+    font-family: $font-stack;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

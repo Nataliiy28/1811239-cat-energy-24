@@ -10,7 +10,7 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  font-family: Oswald;
+  font-family: $font-stack;
   font-size: 16px;
   line-height: 20px;
   cursor: pointer;
@@ -23,7 +23,7 @@
 }
 
 .see-all__button:hover {
-background-color: $special-grey-light;
+  background-color: $special-grey-light;
 }
 
 .see-all__button:active {

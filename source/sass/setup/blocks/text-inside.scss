@@ -3,7 +3,7 @@
 }
 
 .text-inside__clarify {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -17,7 +17,7 @@
 }
 
 .text-inside__clarify-add {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -59,7 +59,7 @@
 }
 
 .text-inside__title-add {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;

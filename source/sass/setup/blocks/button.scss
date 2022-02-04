@@ -1,6 +1,6 @@
 
 .button {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -13,7 +13,7 @@
   cursor: pointer;
   padding: 8px 44px;
   border: 0;
-  // transition: 0,35s;
+
 
   @include tablets {
     display: inline-block;
@@ -37,3 +37,23 @@
 .button:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+// для формы
+// width: 338px;
+//     height: 40px;
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     text-transform: uppercase;
+//     font-family: "Oswald", "Arial", "Helvetica", "Sans-serif";
+//     font-size: 16px;
+//     line-height: 20px;
+//     cursor: pointer;
+//     padding: 26px 107px;
+//     margin-left: 13px;
+//     border: 0px;
+//     margin-bottom: 28px;
+//     color: #FFFFFF;
+//     background-color: #68B738;
+//     margin-top: 53px;
+//     margin-left: 16px;

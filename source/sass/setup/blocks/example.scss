@@ -3,12 +3,13 @@
   width: 100%;
 
   @include tablets {
-    background-image: linear-gradient(0deg, #EAEAEA 462px, $white 20%);
+    background-image: linear-gradient(0deg, #eaeaea 462px, $white 20%);
   }
 
   @include desktop {
     display: flex;
     // flex-wrap: wrap;
+    background-image: linear-gradient(0deg, #eaeaea 462px, $white 20%);
     justify-content: center;
   }
 }
@@ -19,13 +20,13 @@
   margin-bottom: 20px;
   padding-bottom: 20px;
 
-  @include tablets {
-    // background-image: url("../img/background/back_grey-life.jpeg");
-  }
+  // @include tablets {
 
-  @include desktop {
-    // padding-left: 250px;
-  }
+  // }
+
+  // @include desktop {
+
+  // }
 }
 
 .example-section_cat {
@@ -35,7 +36,7 @@
   }
 }
 .example__header {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -45,7 +46,7 @@
   padding-left: 20px;
 
   @include tablets {
-    font-family: Oswald;
+    font-family: $font-stack;
     font-size: 60px;
     line-height: 60px;
     padding-top: 0px;
@@ -60,7 +61,7 @@
 }
 
 .example__header-explanation {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -86,7 +87,7 @@
 }
 
 .example__text-regular {
-  font-family: Arial;
+  font-family: $font-stack-two;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -119,7 +120,7 @@
 }
 
 .example__text {
-  font-family: Arial;
+  font-family: $font-stack-two;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -142,11 +143,12 @@
   @include desktop {
     bottom: -9px;
     white-space: nowrap;
+    background: $special-grey-light;
   }
 }
 
 .example__caption {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
