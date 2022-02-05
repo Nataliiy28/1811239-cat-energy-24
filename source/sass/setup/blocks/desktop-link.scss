@@ -1,4 +1,4 @@
-.desktop-site__list {
+.desktop-link {
   @include desktop {
     font-size: 20px;
     line-height: 30px;
@@ -6,7 +6,7 @@
   }
 }
 
-.desktop-site__list:active {
+.desktop-link:active {
   @include desktop {
     border-bottom: 2px solid #ffffff;
     margin: 3px;
@@ -14,17 +14,13 @@
   }
 }
 
-.desktop-site__list:hover {
+.desktop-link:hover {
   @include desktop {
     color: rgba($color: $white, $alpha: 6);
   }
 }
-.desktop-site__list:hover::before {
+.desktop-link:hover::before {
   @include desktop {
     color: rgba($color: $white, $alpha: 3);
   }
-}
-
-.desktop__form {
-  display: flex;
 }

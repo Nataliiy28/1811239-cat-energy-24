@@ -4,6 +4,10 @@
   // border-bottom: 1px solid $special-grey-light;
   // border-top: 1px solid $special-grey-light;
   margin-right: 20px;
+
+  @include tablets {
+    background-image: linear-gradient(0deg, #eaeaea 462px, #ffffff 20%);
+  }
 }
 
 .product-desc:first-child {
@@ -17,4 +21,8 @@
   flex-wrap: wrap;
   border-bottom: 1px solid $special-grey-light;
   padding-bottom: 10px;
+
+  @include tablets {
+    border-bottom: 0;
+  }
 }
