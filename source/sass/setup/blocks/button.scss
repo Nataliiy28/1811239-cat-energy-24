@@ -1,4 +1,3 @@
-
 .button {
   font-family: $font-stack;
   font-style: normal;
@@ -13,7 +12,6 @@
   cursor: pointer;
   padding: 8px 44px;
   border: 0;
-
 
   @include tablets {
     display: inline-block;
@@ -38,22 +36,29 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-// для формы
-// width: 338px;
-//     height: 40px;
-//     display: flex;
-//     align-items: center;
-//     text-align: center;
-//     text-transform: uppercase;
-//     font-family: "Oswald", "Arial", "Helvetica", "Sans-serif";
-//     font-size: 16px;
-//     line-height: 20px;
-//     cursor: pointer;
-//     padding: 26px 107px;
-//     margin-left: 13px;
-//     border: 0px;
-//     margin-bottom: 28px;
-//     color: #FFFFFF;
-//     background-color: #68B738;
-//     margin-top: 53px;
-//     margin-left: 16px;
+.button__form {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-stack;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 22px 115px;
+  border: 0px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background-color: #68b738;
+  margin-top: 26px;
+  margin-left: 4px;
+  margin-right: 20px;
+
+  @include tablets {
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-row-start: 4;
+  }
+}

@@ -29,3 +29,11 @@
   color: $grafit-grey;
   display: block;
 }
+
+.extra-product__desktop {
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}

@@ -64,6 +64,10 @@
     line-height: 60px;
     margin-left: 69px;
   }
+
+  @include desktop {
+    margin-left: 121px;
+  }
 }
 
 .choose-program__input {
@@ -78,10 +82,12 @@
   margin-bottom: 26px;
   border-bottom: 1px solid #d9d9d9;
 
+
   @include tablets {
-    border-top: 1px solid #d9d9d9;
-    border-left: 1px solid #d9d9d9;
-    border-right: 1px solid #d9d9d9;
+    border-bottom: 0;
+    // border-top: 1px solid #d9d9d9;
+    // border-left: 1px solid #d9d9d9;
+    // border-right: 1px solid #d9d9d9;
     margin-left: 0px;
     padding-left: 70px;
     padding-right: 70px;

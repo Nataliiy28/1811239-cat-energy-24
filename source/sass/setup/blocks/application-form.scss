@@ -18,6 +18,11 @@
     margin-left: 70px;
     padding-bottom: 23px;
   }
+
+
+@include desktop {
+  margin-left: 123px;
+}
 }
 
 .application-form__item {
@@ -46,5 +51,9 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @include desktop {
+    margin-left: 60px;
   }
 }

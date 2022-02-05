@@ -1,13 +1,14 @@
 .comment {
   display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
 
   @include tablets {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 70px;
-    grid-template-rows: 1fr 1fr;
+    padding-left: 55px;
+    grid-template-rows: 55px 341px 1fr;
     margin-right: 133px;
-    margin-top: 57px;
   }
 }
 
@@ -23,11 +24,16 @@
   @include tablets {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 69px;
+    padding-left: 0px;
+    margin-top: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
 }
 
 .comment__paragraph {
+  width: 333px;
+  height: 97px;
   font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
@@ -36,21 +42,18 @@
   text-transform: uppercase;
   color: #444444;
   padding-bottom: 88px;
-  border-top: 1px solid #444444;
-  border-bottom: 1px solid #444444;
-  /* text-align: center; */
+  border: 1px solid#E7E7E7;
   margin-left: 19px;
   padding-left: 14px;
   padding-top: 19px;
   margin-top: 2px;
   margin-bottom: 8px;
   width: 313px;
+  text-align: center;
 
   @include tablets {
     font-size: 20px;
     line-height: 30px;
-    border-left: 1px solid $special_dark-grey;
-    border-right: 1px solid $special_dark-grey;
     width: 631px;
     height: 32px;
     text-align: left;
@@ -58,7 +61,52 @@
     margin-bottom: 65px;
     padding-bottom: 134px;
     padding-top: 10px;
-    padding-left: 19px;
+    padding-left: 41px;
+  }
+}
+
+.comment__paragraf {
+  text-align: center;
+
+  @include tablets {
+    grid-row-start: 5;
+    grid-column-end: 2;
+  }
+}
+
+.comment__checkbox-input {
+  position: relative;
+  display: grid;
+  // grid-template-rows: 191px 87px 52px;
+  // grid-template-columns: 1fr;
+  // margin-bottom: 32px;
+
+  @include tablets {
+    display: grid;
+    grid-template-rows: 43px 110px 61px;
+    grid-template-columns: 1fr;
+    margin-bottom: 24px;
+  }
+}
+
+.comment__checkbox-input {
+  display: grid;
+  grid-template-rows: 42px 110px 57px;
+  grid-template-columns: 1fr;
+  margin-bottom: 19px;
+}
+
+.comment__checkbox {
+  // margin-right: 35px;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+
+  @include tablets {
+    display: grid;
+    grid-template-rows: 43px 114px;
+    grid-template-columns: 323px 282px;
+    margin-bottom: 24px;
   }
 }
 
@@ -101,37 +149,3 @@
 //   left: 0;
 //   z-index: 2;
 // }
-.comment__checkbox-input {
-  position: relative;
-}
-
-.comment__checkbox {
-  // margin-right: 35px;
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-
-// .comment__checkbox:checked + .comment-more::before {
-//     // background-color: url("./../../../img/form/tick_mobile.svg"), 0.3 ;
-// }
-
-.comment__checkbox-input {
-  display: grid;
-  grid-template-rows: 191px 87px 52px;
-  grid-template-columns: 1fr;
-  margin-bottom: 32px;
-}
-
-.comment__paragraf {
-  font-family: $font-stack-two;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  align-items: center;
-  text-align: center;
-  color: $black;
-  margin-bottom: 0px;
-  margin-top: 25px;
-}

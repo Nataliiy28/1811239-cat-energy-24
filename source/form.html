@@ -35,13 +35,13 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="http://127.0.0.1:5500/source/index.html">главная</a>
+                <a class="site-list__link" href="index.html">главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="http://127.0.0.1:5500/source/catalog.html">каталог продукции</a>
+                <a class="site-list__link" href="catalog.html">каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="http://127.0.0.1:5500/source/form.html">подбор программы</a>
+                <a class="site-list__link" href="form.html">подбор программы</a>
               </li>
             </ul>
           </div>
@@ -54,72 +54,56 @@
     <h1 class="choose-program__title">Подбор программы</h1>
     <h2 class="application-form">Заполните анкету, и мы подберем
       программу питания для вашего кота</h2>
-    <div>
+    <div class="desktop__form"></div>
+      <div class="">
+        <form action="#" method="post" content="tex/html;charset=utf-8">
+          <ul class="application-form__list">
+            <li class="application-form__item">
+              <label for="name">Имя:*</label>
+              <input type="text" class="input-text" name="username" value="Барсик" />
+            </li>
+            <li class="application-form__item">
+              <label for="mail">Вес (кг):*</label>
+              <input type="email" class="input-text" name="mail" value="7" />
+            </li>
+            <li class="application-form__item">
+              <label for="age">Возраст (лет):</label>
+              <input type="age" class="input-text" name="age" value="7" />
+            </li>
+          </ul>
+        </form>
 
-      <form action="#" method="post" content="tex/html;charset=utf-8">
-        <ul class="application-form__list">
-          <li class="application-form__item">
-            <label for="name">Имя:*</label>
-            <input type="text" name="username" value="Барсик" />
-          </li>
-          <li class="application-form__item">
-            <label for="mail">Вес (кг):*</label>
-            <input type="email" name="mail" value="7" />
-          </li>
-          <li class="application-form__item">
-            <label for="age">Возраст (лет):</label>
-            <input type="age" name="age" value="7" />
-          </li>
-        </ul>
-      </form>
-    </div>
   </section>
+  <div class="choose-program__input radio">
+    <ul class="radio__list">
+      <li class="radio__item">
+        <label class="label-input">
+          <input type="radio" name="похудение" class="radio-input visually-hidden">
+          <span class="radio__fake">
+          </span>
+          <span>похудение</span>
+        </label>
+      </li>
 
-  <div class="choose-program__input">
-   <ul class="radio__list">
-    <li class="radio__item">
-      <label class="label-input">
-        <input type="radio" name="похудение" class="radio-input visually-hidden">
-        <span class="radio__fake">
-        </span>
-        <span>похудение</span>
-      </label>
-    </li>
+      <li class="radio__item">
+        <label class="label-input">
+          <input type="radio" name="Набор массы" class="radio-input visually-hidden">
+          <span class="radio__fake">
+          </span>
+          <span>Набор массы</span>
+        </label>
+      </li>
 
-    <li class="radio__item">
-      <label class="label-input">
-        <input type="radio" name="Набор массы" class="radio-input visually-hidden">
-        <span class="radio__fake">
-        </span>
-        <span>Набор массы</span>
-      </label>
-    </li>
-
-    <li class="radio__item">
-      <label class="label-input">
-        <input type="radio" name="Набор массы" class="radio-input visually-hidden">
-        <span class="radio__fake">
-        </span>
-        <span>Не знаю (Нужен ваш совет)</span>
-      </label>
-    </li>
-  </ul>
+      <li class="radio__item">
+        <label class="label-input">
+          <input type="radio" name="Набор массы" class="radio-input visually-hidden">
+          <span class="radio__fake">
+          </span>
+          <span>Не знаю (Нужен ваш совет)</span>
+        </label>
+      </li>
+    </ul>
   </div>
-
-
-
-  <!-- <div class="choose-program__input">
-    <p class="choose-program__input-item"><input checked class="choose-program__radio" id="loosweghit" type="radio"
-        name="slim" />
-    </p><label for="loosweghit">похудение</label>
-    <p class="choose-program__input-item"><input class="choose-program__radio" type="radio" name="slim" />Набор
-      массы</p>
-    <p class="choose-program__input-item"><input class="choose-program__radio" type="radio" name="slim" />Не знаю (Нужен
-      ваш
-      совет)</p>
-  </div> -->
-
-
 
   <section class="contact-information">
     <h3 class="contact-information__title">Контактные данные
@@ -128,11 +112,11 @@
       <ul class="contact-list">
         <li class="contact-item">
           <label for="mail">E-mail:*</label>
-          <input class="choose-program__input-item" type="email" name="mail-item" value="kuklachev@gmail.com">
+          <input class="input-text input-text__comment" type="email" name="mail-item" value="kuklachev@gmail.com">
         </li>
         <li class="contact-item">
           <label for="phone">Телефон:*</label>
-          <input class="choose-program__input-item" type="tel" name="phone" value="8 (960) 900-60-90">
+          <input class="input-text input-text__comment" type="tel" name="phone" value="8 (960) 900-60-90">
         </li>
       </ul>
     </form>
@@ -140,60 +124,46 @@
     <!-- <p class="comment__paragraph">Расскажите обо всех повадках кота</p> -->
     <textarea class="comment__paragraph" name="text">Расскажите обо всех повадках кота</textarea>
   </section>
+  <h3 class="comment__title">Дополнительно</h3>
   <section class="comment">
-    <h3 class="comment__title">Дополнительно</h3>
-    <div class="comment__checkbox-input">
-      <!-- <label class="comment-more"><input class="comment__checkbox" type="checkbox"
-          id="checkbox_1"/>сахарозаменитель</label>
+    <div class="comment__checkbox-input checkbox">
 
-          <label class="comment-more"><input class="comment__checkbox" type="checkbox"
-            id="checkbox_1"/>питьевая вода</label>
+      <ul class="checkbox__list">
+        <li class="checkbox__item">
+          <label class="label-input comment-more">
+            <input type="checkbox" name="сахарозаменитель" class="comment__checkbox checkbox__input visually-hidden ">
+            <span class="checkbox__fake"></span>
+            <span> сахарозаменитель</span>
+          </label>
+        </li>
+        <li class="checkbox__item">
+          <label class="label-input comment-more">
+            <input type="checkbox" name="питьевая вода" class="comment__checkbox checkbox__input visually-hidden">
+            <span class="checkbox__fake"></span>
+            <span> питьевая вода</span>
+          </label>
+        </li>
 
-      <label for="checkbox_1" class="comment-more"><input class="comment__checkbox" type="checkbox"
-          id="checkbox_1" />молоко</label>
+        <li class="checkbox__item">
+          <label class="label-input comment-more">
+            <input type="checkbox" name="молоко" class="comment__checkbox checkbox__input visually-hidden">
+            <span class="checkbox__fake">
+            </span>
+            <span>молоко </span>
+          </label>
+        </li>
 
-      <label for="checkbox_1" class="comment-more"><input class="comment__checkbox" type="checkbox"
-          id="checkbox_1" />витамины</label> -->
-
-
-        <ul class="checkbox__list">
-          <li class="checkbox__item">
-            <label class="label-input comment-more">
-              <input type="checkbox comment__checkbox" name="сахарозаменитель" class="checkbox-input visually-hidden ">
-              <span class="checkbox__fake"></span>
-              <span> сахарозаменитель</span>
-            </label>
-          </li>
-
-
-          <li class="checkbox__item">
-            <label class="label-input comment-more">
-              <input type="checkbox comment__checkbox" name="питьевая вода" class="checkbox-input visually-hidden">
-              <span class="checkbox__fake"></span>
-              <span> питьевая вода</span>
-            </label>
-          </li>
-
-          <li class="checkbox__item">
-            <label class="label-input comment-more">
-              <input type="checkbox comment__checkbox" name="молоко" class="checkbox-input visually-hidden">
-              <span class="checkbox__fake">
-              </span>
-              <span>молоко </span>
-            </label>
-          </li>
-
-          <li class="checkbox__item">
-            <label class="label-input comment-more">
-              <input type="checkbox comment__checkbox" name="витамины" class="checkbox-input visually-hidden">
-              <span class="checkbox__fake">
-              </span>
-              <span>витамины </span>
-            </label>
-          </li>
-        </ul>
-        <button class="button button-catalog" type="button">отправить заявку</button>
-        <p class="comment__paragraf">* — Обязательные поля</p>
+        <li class="checkbox__item">
+          <label class="label-input comment-more">
+            <input type="checkbox" name="витамины" class="comment__checkbox checkbox__input visually-hidden">
+            <span class="checkbox__fake">
+            </span>
+            <span>витамины </span>
+          </label>
+        </li>
+      </ul>
+      <button class="button__form " type="button">отправить заявку</button>
+      <p class="comment__paragraf">* — Обязательные поля</p>
     </div>
   </section>
 
