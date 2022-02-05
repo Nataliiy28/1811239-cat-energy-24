@@ -53,6 +53,10 @@
 
 .checkbox__item {
   margin-bottom: 15px;
+
+  @include tablets {
+    width: 50%;
+  }
 }
 
 .checkbox__item:last-child {
