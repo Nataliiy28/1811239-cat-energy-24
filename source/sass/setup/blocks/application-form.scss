@@ -1,13 +1,15 @@
 .application-form {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $black;
+  width: 226px;
+  margin-top: 39px;
 
   @include tablets {
-    font-family: Oswald;
+    font-family: $font-stack;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -16,10 +18,15 @@
     margin-left: 70px;
     padding-bottom: 23px;
   }
+
+
+@include desktop {
+  margin-left: 123px;
+}
 }
 
 .application-form__item {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -39,10 +46,14 @@
   @include tablets {
     padding-left: 71px;
     padding-bottom: 72px;
-    font-family: Oswald;
+    font-family: $font-stack;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @include desktop {
+    margin-left: 60px;
   }
 }

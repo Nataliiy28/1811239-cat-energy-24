@@ -35,13 +35,13 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="http://127.0.0.1:5500/source/index.html">главная</a>
+                <a class="site-list__link" href="index.html">главная</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="http://127.0.0.1:5500/source/catalog.html">каталог продукции</a>
+                <a class="site-list__link" href="catalog.html">каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="http://127.0.0.1:5500/source/form.html">подбор программы</a>
+                <a class="site-list__link" href="form.html">подбор программы</a>
               </li>
             </ul>
           </div>
@@ -49,36 +49,63 @@
       </div>
     </div>
   </header>
-  <div>
-    <section class="choose-program__form-page">
-      <h1 class="choose-program__title">Подбор программы</h1>
-      <h2 class="application-form">Заполните анкету, и мы подберем
-        программу питания для вашего кота</h2>
-      <form action="#" method="post">
-        <ul class="application-form__list">
-          <li class="application-form__item">
-            <label for="name">Имя:*</label>
-            <input type="text" id="name" name="user_name">
-          </li>
-          <li class="application-form__item">
-            <label for="mail">Вес (кг):*</label>
-            <input type="email" id="mail" name="user_mail">
-          </li>
-          <li class="application-form__item">
-            <label for="msg">Возраст (лет):</label>
-            <textarea id="msg" name="user_message"></textarea>
-          </li>
-        </ul>
-      </form>
-    </section>
+
+  <section class="choose-program-form">
+    <h1 class="choose-program__title">Подбор программы</h1>
+    <h2 class="application-form">Заполните анкету, и мы подберем
+      программу питания для вашего кота</h2>
+    <div class="desktop__form">
+      <div class="">
+        <form action="#" method="post" content="tex/html;charset=utf-8">
+          <ul class="application-form__list">
+            <li class="application-form__item">
+              <label for="name">Имя:*</label>
+              <input type="text" class="input-text" name="username" value="Барсик" />
+            </li>
+            <li class="application-form__item">
+              <label for="mail">Вес (кг):*</label>
+              <input type="email" class="input-text" name="mail" value="7" />
+            </li>
+            <li class="application-form__item">
+              <label for="age">Возраст (лет):</label>
+              <input type="age" class="input-text" name="age" value="7" />
+            </li>
+          </ul>
+        </form>
+      </div>
+
+  </section>
+  <div class="choose-program__input radio">
+    <ul class="radio__list">
+      <li class="radio__item">
+        <label class="label-input">
+          <input type="radio" name="похудение" class="radio-input visually-hidden">
+          <span class="radio__fake">
+          </span>
+          <span>похудение</span>
+        </label>
+      </li>
+
+      <li class="radio__item">
+        <label class="label-input">
+          <input type="radio" name="Набор массы" class="radio-input visually-hidden">
+          <span class="radio__fake">
+          </span>
+          <span>Набор массы</span>
+        </label>
+      </li>
+
+      <li class="radio__item">
+        <label class="label-input">
+          <input type="radio" name="Набор массы" class="radio-input visually-hidden">
+          <span class="radio__fake">
+          </span>
+          <span>Не знаю (Нужен ваш совет)</span>
+        </label>
+      </li>
+    </ul>
   </div>
 
-  <section class="choose-program__input">
-    <label class="choose-program__input-item"><input class="choose-program__radio" type="radio" />похудение</label>
-    <label class="choose-program__input-item"><input class="choose-program__radio" type="radio" />Набор массы</label>
-    <label class="choose-program__input-item"><input class="choose-program__radio" type="radio" />Не знаю (Нужен ваш
-      совет)</label>
-  </section>
   <section class="contact-information">
     <h3 class="contact-information__title">Контактные данные
       (владельца кота)</h3>
@@ -86,30 +113,62 @@
       <ul class="contact-list">
         <li class="contact-item">
           <label for="mail">E-mail:*</label>
-          <input class="choose-program__input-item" type="email" id="mail" name="mail-item">
+          <input class="input-text input-text__comment" type="email" name="mail-item" value="kuklachev@gmail.com">
         </li>
         <li class="contact-item">
           <label for="phone">Телефон:*</label>
-          <input class="choose-program__input-item" type="text" id="name" name="one">
+          <input class="input-text input-text__comment" type="tel" name="phone" value="8 (960) 900-60-90">
         </li>
       </ul>
     </form>
     <h4 class="comment__title">Комментарий</h4>
-    <p class="comment__paragraph">Расскажите обо всех повадках кота</p>
+    <!-- <p class="comment__paragraph">Расскажите обо всех повадках кота</p> -->
+    <textarea class="comment__paragraph" name="text">Расскажите обо всех повадках кота</textarea>
   </section>
-  <div class="comment">
-    <h3 class="comment__title">Дополнительно</h3>
-    <section class="comment__checkbox-input">
-      <label class="comment-more"><input class="comment-checkbox" type="checkbox" />сахарозаменитель</label>
-      <label class="comment-more"><input class="comment-checkbox" type="checkbox" />питьевая вода</label>
-      <label class="comment-more"><input class="comment-checkbox" type="checkbox" />молоко</label>
-      <label class="comment-more"><input class="comment-checkbox" type="checkbox" />витамины</label>
-      <button class="button" type="button">отправить заявку</button>
-      <p>* — Обязательные поля</p>
-    </section>
-  </div>
+  <h3 class="comment__title">Дополнительно</h3>
+  <section class="comment">
+    <div class="comment__checkbox-input checkbox">
 
-  <div class="collabaration">
+      <ul class="checkbox__list">
+        <li class="checkbox__item">
+          <label class="label-input comment-more">
+            <input type="checkbox" name="сахарозаменитель" class="comment__checkbox checkbox__input visually-hidden ">
+            <span class="checkbox__fake"></span>
+            <span> сахарозаменитель</span>
+          </label>
+        </li>
+        <li class="checkbox__item">
+          <label class="label-input comment-more">
+            <input type="checkbox" name="питьевая вода" class="comment__checkbox checkbox__input visually-hidden">
+            <span class="checkbox__fake"></span>
+            <span> питьевая вода</span>
+          </label>
+        </li>
+
+        <li class="checkbox__item">
+          <label class="label-input comment-more">
+            <input type="checkbox" name="молоко" class="comment__checkbox checkbox__input visually-hidden">
+            <span class="checkbox__fake">
+            </span>
+            <span>молоко </span>
+          </label>
+        </li>
+
+        <li class="checkbox__item">
+          <label class="label-input comment-more">
+            <input type="checkbox" name="витамины" class="comment__checkbox checkbox__input visually-hidden">
+            <span class="checkbox__fake">
+            </span>
+            <span>витамины </span>
+          </label>
+        </li>
+      </ul>
+      <button class="button__form " type="button">отправить заявку</button>
+      <p class="comment__paragraf">* — Обязательные поля</p>
+    </div>
+  </section>
+
+  <div class="collabaration collabaration-form">
     <p class="collabaration__rigit-text">приглашаем к сотрудничеству дилеров!</p>
     <p class="collabaration__left-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
   </div>
@@ -127,7 +186,7 @@
   </div>
   <footer class="footer">
     <div class="footer-logo">
-      <span class="socials__item social">
+      <span class="social">
         <a class="social__button" href="#" aria-label="Лого Кэт Энерджи">
           <img class="social__icon-cat" src="./img/logo/footer_text-logo.svg" width="128" height="24"
             alt="logo cat anergy">
@@ -136,18 +195,18 @@
     </div>
     <div class="footer__row">
       <ul class="footer__socials socials">
-        <li class="socials__item social">
+        <li class="footer__item social">
           <a class="social__button" href="#" aria-label="вконтакте">
             <img class="social__icon" src="./img/sotial/icon_vkontakte.svg" width="23" height="16" alt="vkontakte icon">
           </a>
         </li>
-        <li class="socials__item social">
+        <li class="footer__item  social">
           <a class="social__button" href="#" aria-label="инстаграм">
             <img class="social__icon" src="./img/sotial/icon_instagram.svg" width="23" height="22"
               alt="instagramm icon">
           </a>
         </li>
-        <li class="socials__item social">
+        <li class="footer__item  social">
           <a class="social__button" href="#" aria-label="фейсбук"></a>
           <img class="social__icon" src="./img/sotial/icon_facebook.svg" width="23" height="22" alt="facebook icon">
         </li>
@@ -157,7 +216,7 @@
           <img src="./img/logo/html_text_footer-logo.svg" width="114" height="18" alt="logo_htmlacademy tex"></a>
 
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="develop__logo-icon">
-          <img class="footer-logo__hat" src="./img/logo/footer_hat-logo.svg" width="27" height="34"
+          <img class="footer__hat" src="./img/logo/footer_hat-logo.svg" width="27" height="34"
             alt="logo_htmlacademy hat"></a>
       </div>
     </div>

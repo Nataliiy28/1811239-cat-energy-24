@@ -63,7 +63,7 @@
 
 .hero__title {
   list-style-type: none;
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -75,7 +75,7 @@
   @include tablets {
     position: relative;
     background-color: $white;
-    font-family: Oswald;
+    font-family: $font-stack;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -99,7 +99,7 @@
 }
 
 .hero__subtitle {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -110,7 +110,7 @@
   text-transform: uppercase;
 
   @include tablets {
-    font-family: Oswald;
+    font-family: $font-stack;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;

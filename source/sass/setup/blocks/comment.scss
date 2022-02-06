@@ -1,18 +1,25 @@
 .comment {
   display: grid;
+  margin-left: 20px;
+  margin-right: 20px;
 
   @include tablets {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 70px;
-    grid-template-rows: 1fr 1fr;
+    padding-left: 55px;
+    grid-template-rows: 55px 341px 1fr;
     margin-right: 133px;
-    margin-top: 57px;
+  }
+
+  @include desktop {
+    display: grid;
+    padding-left: 94px;
+    grid-template-rows: 55px 341px 1fr;
+    margin-right: 133px;
   }
 }
 
 .comment__title {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -23,33 +30,40 @@
   @include tablets {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 69px;
+    padding-left: 0px;
+    margin-top: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  @include desktop {
+    margin-left: 112px;
   }
 }
 
 .comment__paragraph {
-  font-family: Oswald;
+  width: 333px;
+  height: 97px;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: $special_dark-grey;
-  padding-bottom: 125px;
-  border-top: 1px solid $special_dark-grey;
-  border-bottom: 1px solid $special_dark-grey;
-  margin-left: 20px;
-  padding-left: 35px;
-  padding-top: 47px;
-  margin-top: 37px;
-  margin-right: 20px;
-  margin-bottom: 22px;
+  color: #444444;
+  padding-bottom: 88px;
+  border: 1px solid#E7E7E7;
+  margin-left: 19px;
+  padding-left: 14px;
+  padding-top: 19px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  width: 313px;
+  text-align: center;
 
   @include tablets {
     font-size: 20px;
     line-height: 30px;
-    border-left: 1px solid $special_dark-grey;
-    border-right: 1px solid $special_dark-grey;
     width: 631px;
     height: 32px;
     text-align: left;
@@ -57,29 +71,102 @@
     margin-bottom: 65px;
     padding-bottom: 134px;
     padding-top: 10px;
-    padding-left: 19px;
+    padding-left: 41px;
+  }
+
+  @include desktop {
+    margin-left: 110px;
   }
 }
 
-.comment-more {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $black;
-  margin-bottom: 19px;
-  margin-left: 20px;
-}
+.comment__paragraf {
+  text-align: center;
 
-.comment-checkbox {
-  margin-right: 15px;
+  @include tablets {
+    grid-row-start: 5;
+    grid-column-end: 2;
+  }
+
+  @include desktop {
+    grid-row-start: 4;
+    grid-column-end: 2;
+    margin-left: 270px;
+    margin-top: 40px;
+  }
 }
 
 .comment__checkbox-input {
+  position: relative;
+  display: grid;
+  // grid-template-rows: 191px 87px 52px;
+  // grid-template-columns: 1fr;
+  // margin-bottom: 32px;
+
+  @include tablets {
     display: grid;
-    grid-auto-rows: 1fr 1fr 1fr;
-    // grid-column-start: -1;
-    grid-row-start: 3;
+    grid-template-rows: 43px 110px 61px;
+    grid-template-columns: 1fr;
+    margin-bottom: 24px;
+  }
 }
+
+.comment__checkbox-input {
+  display: grid;
+  grid-template-rows: 42px 110px 57px;
+  grid-template-columns: 1fr;
+  margin-bottom: 19px;
+}
+
+.comment__checkbox {
+  // margin-right: 35px;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+
+  @include tablets {
+    display: grid;
+    grid-template-rows: 43px 114px;
+    grid-template-columns: 323px 282px;
+    margin-bottom: 24px;
+  }
+}
+
+// .comment-more {
+//   font-family: $font-stack;
+//   font-size: 16px;
+//   line-height: 18px;
+//   text-transform: uppercase;
+//   color: $black;
+//   margin-bottom: 19px;
+//   margin-left: 20px;
+//   padding-left: 15px;
+//   opacity: 0;
+//   cursor: pointer;
+// }
+
+// .comment-more::before {
+//   content: "";
+//   display: block;
+//   width: 26px;
+//   height: 26px;
+//   border: 1px solid $special_grey;
+//   background: $white;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+// }
+
+// .comment-more::after {
+//   content: "";
+//   display: block;
+//   width: 26px;
+//   height: 26px;
+//   background: url("./../../../img/form/tick_mobile.svg") no-repeat;
+//   -webkit-background-size: cover;
+//   background-size: 26px 26px;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: 2;
+// }

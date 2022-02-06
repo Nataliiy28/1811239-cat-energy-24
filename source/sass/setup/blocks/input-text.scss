@@ -1,0 +1,51 @@
+.input-text {
+  width: 204px;
+  height: 45px;
+  margin-left: 12px;
+  border: 1px solid #e7e7e7;
+  font-size: 16px;
+  font-family: $font-stack;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+
+  @include tablets {
+    width: 567px;
+    height: 52px;
+  }
+}
+
+.input-text:first-child {
+  width: 228px;
+
+  @include tablets {
+    width: 567px;
+    height: 52px;
+  }
+}
+
+.input-text:last-child {
+  width: 172px;
+  height: 45px;
+
+  @include tablets {
+    width: 567px;
+    height: 52px;
+  }
+}
+
+.input-text:hover {
+  border: 1px solid $special_grey;
+}
+
+.input-text:focus {
+  border: 2px solid $special_dark-grey;
+}
+
+.input-text:invalid {
+  border: 2px solid #ff8282;
+}
+
+.input-text__comment {
+  margin-bottom: 13px;
+  width: 219px;
+}

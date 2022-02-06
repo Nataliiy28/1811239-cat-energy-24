@@ -1,6 +1,5 @@
-
 .button {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -13,7 +12,6 @@
   cursor: pointer;
   padding: 8px 44px;
   border: 0;
-  // transition: 0,35s;
 
   @include tablets {
     display: inline-block;
@@ -36,4 +34,52 @@
 
 .button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button__form {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-stack;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 22px 115px;
+  border: 0px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  background-color: #68b738;
+  margin-top: 26px;
+  margin-left: 4px;
+  margin-right: 20px;
+
+  @include tablets {
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-row-start: 4;
+  }
+
+  @include desktop {
+    width: 568px;
+    height: 52px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald", "Arial", "Helvetica", "Sans-serif";
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 25px 214px;
+    border: 0px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    background-color: #68b738;
+    margin-top: 26px;
+    margin-right: 20px;
+  }
 }

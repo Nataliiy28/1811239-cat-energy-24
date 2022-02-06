@@ -6,7 +6,7 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 0 60px;
+    // padding: 0 60px;
   }
 
   @include desktop {
@@ -72,7 +72,7 @@
 }
   }
 
-.footer-logo__hat {
+.footer__hat {
   padding-left: 100px;
   margin-bottom: 22px;
   margin-left: 82px;

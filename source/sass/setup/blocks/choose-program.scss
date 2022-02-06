@@ -33,7 +33,7 @@
 }
 
 .choose-program__description {
-  font-family: Arial;
+  font-family: $font-stack-two;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -50,24 +50,28 @@
 }
 
 .choose-program__title {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
 
   @include tablets {
-    font-family: Oswald;
+    font-family: $font-stack;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
     line-height: 60px;
     margin-left: 69px;
   }
+
+  @include desktop {
+    margin-left: 121px;
+  }
 }
 
 .choose-program__input {
-  font-family: Oswald;
+  font-family: $font-stack;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -78,10 +82,12 @@
   margin-bottom: 26px;
   border-bottom: 1px solid #d9d9d9;
 
+
   @include tablets {
-    border-top: 1px solid #d9d9d9;
-    border-left: 1px solid #d9d9d9;
-    border-right: 1px solid #d9d9d9;
+    border-bottom: 0;
+    // border-top: 1px solid #d9d9d9;
+    // border-left: 1px solid #d9d9d9;
+    // border-right: 1px solid #d9d9d9;
     margin-left: 0px;
     padding-left: 70px;
     padding-right: 70px;
@@ -94,7 +100,7 @@
   margin-bottom: 20px;
 
   @include tablets {
-    font-family: Oswald;
+    font-family: $font-stack;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -105,4 +111,37 @@
 .choose-program__radio {
   margin-right: 15px;
   margin-left: 20px;
+}
+
+
+.choose-program__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.choose-program__radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.choose-program__radio::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.choose-program__radio:checked + label::before {
+  border-color: $basic-grey;
+  background-color: $white;
+  background-image: url("./../../../img/form/tick_mobile.svg");
 }

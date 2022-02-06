@@ -1,0 +1,64 @@
+.checkbox__fake {
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special_grey;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.checkbox__input:checked + .checkbox__fake::before {
+  content: "";
+  border: var(--basic-grey-light);
+  width: 28px;
+  height: 24px;
+  display: block;
+  background-image: url("../img/form/tick_mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.checkbox__list {
+  list-style: none;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0;
+  padding: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+
+  @include tablets {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+  }
+}
+
+.checkbox__item {
+  margin-bottom: 15px;
+
+  @include tablets {
+    width: 50%;
+  }
+}
+
+.checkbox__item:last-child {
+  margin-bottom: 0;
+}
