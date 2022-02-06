@@ -15,14 +15,3 @@
     border-top: 0px;
   }
 }
-
-.product-desc__add {
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: 1px solid $special-grey-light;
-  padding-bottom: 10px;
-
-  @include tablets {
-    border-bottom: 0;
-  }
-}

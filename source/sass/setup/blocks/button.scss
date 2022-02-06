@@ -61,4 +61,25 @@
     grid-row-end: 5;
     grid-row-start: 4;
   }
+
+  @include desktop {
+    width: 568px;
+    height: 52px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald", "Arial", "Helvetica", "Sans-serif";
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 25px 214px;
+    border: 0px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    background-color: #68b738;
+    margin-top: 26px;
+    margin-right: 20px;
+  }
 }

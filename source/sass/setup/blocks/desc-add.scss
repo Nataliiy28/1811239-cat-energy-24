@@ -1,0 +1,62 @@
+.desc-add {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $special-grey-light;
+  padding-bottom: 10px;
+
+  @include tablets {
+    border-bottom: 0;
+  }
+}
+
+.desc-add__clarify-add {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+  max-width: 76px;
+  margin-left: 76px;
+}
+
+.desc-add__comment-add {
+  font-family: $font-stack-two;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+  margin-top: 0px;
+  margin-left: 68px;
+}
+
+.desc-add__button {
+  width: 279px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-stack;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 22px 91px;
+  margin-left: 39px;
+  border: 0px;
+  margin-bottom: 30px;
+  margin-top: 26px;
+  color: $special_dark-grey;
+}
+
+.desc-add__button:hover {
+  background-color: $special-grey-light;
+}
+
+.desc-add__button:active {
+  color: rgba($color: $white, $alpha: 0.3);
+}

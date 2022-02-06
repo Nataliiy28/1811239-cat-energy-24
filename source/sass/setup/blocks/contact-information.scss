@@ -22,6 +22,10 @@
     padding-left: 69px;
     width: 512px;
   }
+
+  @include desktop {
+    margin-left: 41px;
+  }
 }
 
 .contact-list {
@@ -30,6 +34,10 @@
 
   @include tablets {
     padding-left: 71px;
+  }
+
+  @include desktop {
+    padding-left: 110px;
   }
 }
 

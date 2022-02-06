@@ -5,8 +5,14 @@
 
   @include tablets {
     display: grid;
-
     padding-left: 55px;
+    grid-template-rows: 55px 341px 1fr;
+    margin-right: 133px;
+  }
+
+  @include desktop {
+    display: grid;
+    padding-left: 94px;
     grid-template-rows: 55px 341px 1fr;
     margin-right: 133px;
   }
@@ -28,6 +34,10 @@
     margin-top: 0px;
     grid-column-start: 1;
     grid-column-end: 1;
+  }
+
+  @include desktop {
+    margin-left: 112px;
   }
 }
 
@@ -63,6 +73,10 @@
     padding-top: 10px;
     padding-left: 41px;
   }
+
+  @include desktop {
+    margin-left: 110px;
+  }
 }
 
 .comment__paragraf {
@@ -71,6 +85,13 @@
   @include tablets {
     grid-row-start: 5;
     grid-column-end: 2;
+  }
+
+  @include desktop {
+    grid-row-start: 4;
+    grid-column-end: 2;
+    margin-left: 270px;
+    margin-top: 40px;
   }
 }
 

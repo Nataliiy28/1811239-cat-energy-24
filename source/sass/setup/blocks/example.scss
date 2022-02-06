@@ -29,7 +29,7 @@
   // }
 }
 
-.example-section__cat {
+.example-cat {
   @include desktop {
     margin-left: auto;
     width: min-content;
@@ -216,5 +216,22 @@
     margin-left: 137px;
     flex-wrap: wrap;
     margin-bottom: 50px;
+  }
+}
+
+
+.exampl-fatcat {
+  margin-left: 23px;
+  margin-bottom: 15px;
+
+  @include tablets {
+    width: 592px;
+    height: 511px;
+    margin-top: 80px;
+    margin-left: 87px;
+  }
+
+  @include desktop {
+    margin-left: 0px;
   }
 }

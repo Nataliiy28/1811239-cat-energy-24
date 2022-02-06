@@ -1,9 +1,3 @@
-// .catalog {
-//   @include tablets {
-//     display: grid;
-//   }
-// }
-
 .catalog__product-item {
   display: flex;
   flex-wrap: wrap;
@@ -19,15 +13,21 @@
 
   @include desktop {
     background-image: linear-gradient(0deg, #eaeaea 462px, #ffffff 20%);
-    width: 245px;
-    height: 511px;
     border-bottom: 0;
+    height: 515px;
   }
 }
 
 .catalog__img {
   padding-left: 55px;
   padding-top: 18px;
+
+  @include desktop {
+    padding-left: 67px;
+    padding-top: -7px;
+    width: 168px;
+    height: 200px;
+  }
 }
 
 .catalog__img-add {
@@ -40,16 +40,25 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: 53px;
+
+  @include desktop {
+    margin-left: 36px;
+  }
 }
 
-.catalog-list__product-list-right {
+.catalog__product-list-right {
   list-style-type: none;
   margin: 0;
   padding: 0;
   flex: 1;
+  text-decoration: none;
+
+  @include desktop {
+    margin-right: 171px;
+  }
 }
 
-.catalog-list__product-list-left {
+.catalog__product-list-left {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -68,5 +77,72 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+}
+
+.catalog__subtitle {
+  margin: 0px;
+  height: 41px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+}
+
+.catalog__clarify {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $grafit-grey;
+  max-width: 76px;
+  display: block;
+}
+
+.catalog__catalog-comment {
+  font-family: $font-stack-two;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey;
+
+  @include desktop {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.catalog__product-button {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white;
+  padding-left: 56px;
+}
+
+.catalog__product-button {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white;
+  padding-left: 56px;
+}
+
+.catalog-img {
+  margin-top: 34px;
+  margin-left: 26px;
+  margin-bottom: 35px;
+
+  @include tablets {
+    margin-left: auto;
   }
 }

@@ -1,6 +1,6 @@
 .extra-product {
-  margin-left: 20px;
-  margin-right: 20px;
+  // margin-left: 20px;
+  // margin-right: 20px;
 }
 
 .extra-product__title {
@@ -30,10 +30,12 @@
   display: block;
 }
 
-.extra-product__desktop {
-  @include desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-  }
+.extra-product__title-add {
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  padding-bottom: 16px;
 }
