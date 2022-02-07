@@ -7,6 +7,7 @@
   color: $black;
   width: 226px;
   margin-top: 39px;
+  margin-left: 20px;
 
   @include tablets {
     font-family: $font-stack;
@@ -19,10 +20,9 @@
     padding-bottom: 23px;
   }
 
-
-@include desktop {
-  margin-left: 123px;
-}
+  @include desktop {
+    margin-left: 123px;
+  }
 }
 
 .application-form__item {
@@ -44,13 +44,13 @@
   color: $special_dark-grey;
 
   @include tablets {
-    padding-left: 71px;
-    padding-bottom: 72px;
     font-family: $font-stack;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 32px;
+    padding-left: 58px;
   }
 
   @include desktop {

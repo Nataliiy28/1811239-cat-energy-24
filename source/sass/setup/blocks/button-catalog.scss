@@ -18,6 +18,28 @@
   margin-top: 26px;
   margin-left: 20px;
   margin-right: 20px;
+
+  @include desktop {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-stack;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 22px 81px;
+    margin-left: 39px;
+    border: 0px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    background-color: #68B738;
+    margin-top: 26px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .button-catalog:hover {
