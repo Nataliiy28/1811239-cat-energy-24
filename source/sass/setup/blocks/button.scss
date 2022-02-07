@@ -55,11 +55,30 @@
   margin-top: 26px;
   margin-left: 4px;
   margin-right: 20px;
+  margin-top: 171px;
 
   @include tablets {
     grid-column-start: 1;
     grid-row-end: 5;
-    grid-row-start: 4;
+    height: 52px;
+    width: 282px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald", "Arial", "Helvetica", "Sans-serif";
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 27px 74px;
+    border: 0px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    background-color: #68b738;
+    margin-top: 26px;
+    margin-left: 4px;
+    margin-right: 20px;
+    margin-top: 171px;
   }
 
   @include desktop {

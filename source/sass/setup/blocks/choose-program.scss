@@ -55,6 +55,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  margin-left: 20px;
 
   @include tablets {
     font-family: $font-stack;
@@ -81,18 +82,15 @@
   display: grid;
   margin-bottom: 26px;
   border-bottom: 1px solid #d9d9d9;
-
+  border-top: 1px solid #d9d9d9;
 
   @include tablets {
     border-bottom: 0;
-    // border-top: 1px solid #d9d9d9;
-    // border-left: 1px solid #d9d9d9;
-    // border-right: 1px solid #d9d9d9;
     margin-left: 0px;
     padding-left: 70px;
     padding-right: 70px;
-    padding-top: 36px;
     padding-bottom: 30px;
+    border-top: 0;
   }
 }
 
@@ -112,7 +110,6 @@
   margin-right: 15px;
   margin-left: 20px;
 }
-
 
 .choose-program__radio {
   position: absolute;

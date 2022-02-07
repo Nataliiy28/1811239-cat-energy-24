@@ -16,6 +16,7 @@
 </head>
 
 <body class="page-body">
+
   <header class="header">
     <div class="header__top">
       <div class="container">
@@ -60,114 +61,112 @@
           <ul class="application-form__list">
             <li class="application-form__item">
               <label for="name">Имя:*</label>
-              <input type="text" class="input-text" name="username" value="Барсик" />
+              <input id="name" type="text" class="input-text" name="username" value="Барсик" />
             </li>
             <li class="application-form__item">
               <label for="mail">Вес (кг):*</label>
-              <input type="email" class="input-text" name="mail" value="7" />
+              <input id="mail" type="text" class="input-text" name="mail" value="7" />
             </li>
             <li class="application-form__item">
               <label for="age">Возраст (лет):</label>
-              <input type="age" class="input-text" name="age" value="7" />
+              <input id="age" type="text" class="input-text" name="age" value="7" />
             </li>
           </ul>
         </form>
       </div>
-
-  </section>
-  <div class="choose-program__input radio">
-    <ul class="radio__list">
-      <li class="radio__item">
-        <label class="label-input">
-          <input type="radio" name="похудение" class="radio-input visually-hidden">
-          <span class="radio__fake">
-          </span>
-          <span>похудение</span>
-        </label>
-      </li>
-
-      <li class="radio__item">
-        <label class="label-input">
-          <input type="radio" name="Набор массы" class="radio-input visually-hidden">
-          <span class="radio__fake">
-          </span>
-          <span>Набор массы</span>
-        </label>
-      </li>
-
-      <li class="radio__item">
-        <label class="label-input">
-          <input type="radio" name="Набор массы" class="radio-input visually-hidden">
-          <span class="radio__fake">
-          </span>
-          <span>Не знаю (Нужен ваш совет)</span>
-        </label>
-      </li>
-    </ul>
-  </div>
-
-  <section class="contact-information">
-    <h3 class="contact-information__title">Контактные данные
-      (владельца кота)</h3>
-    <form action="#" method="post">
-      <ul class="contact-list">
-        <li class="contact-item">
-          <label for="mail">E-mail:*</label>
-          <input class="input-text input-text__comment" type="email" name="mail-item" value="kuklachev@gmail.com">
-        </li>
-        <li class="contact-item">
-          <label for="phone">Телефон:*</label>
-          <input class="input-text input-text__comment" type="tel" name="phone" value="8 (960) 900-60-90">
-        </li>
-      </ul>
-    </form>
-    <h4 class="comment__title">Комментарий</h4>
-    <!-- <p class="comment__paragraph">Расскажите обо всех повадках кота</p> -->
-    <textarea class="comment__paragraph" name="text">Расскажите обо всех повадках кота</textarea>
-  </section>
-  <h3 class="comment__title">Дополнительно</h3>
-  <section class="comment">
-    <div class="comment__checkbox-input checkbox">
-
-      <ul class="checkbox__list">
-        <li class="checkbox__item">
-          <label class="label-input comment-more">
-            <input type="checkbox" name="сахарозаменитель" class="comment__checkbox checkbox__input visually-hidden ">
-            <span class="checkbox__fake"></span>
-            <span> сахарозаменитель</span>
-          </label>
-        </li>
-        <li class="checkbox__item">
-          <label class="label-input comment-more">
-            <input type="checkbox" name="питьевая вода" class="comment__checkbox checkbox__input visually-hidden">
-            <span class="checkbox__fake"></span>
-            <span> питьевая вода</span>
-          </label>
-        </li>
-
-        <li class="checkbox__item">
-          <label class="label-input comment-more">
-            <input type="checkbox" name="молоко" class="comment__checkbox checkbox__input visually-hidden">
-            <span class="checkbox__fake">
-            </span>
-            <span>молоко </span>
-          </label>
-        </li>
-
-        <li class="checkbox__item">
-          <label class="label-input comment-more">
-            <input type="checkbox" name="витамины" class="comment__checkbox checkbox__input visually-hidden">
-            <span class="checkbox__fake">
-            </span>
-            <span>витамины </span>
-          </label>
-        </li>
-      </ul>
-      <button class="button__form " type="button">отправить заявку</button>
-      <p class="comment__paragraf">* — Обязательные поля</p>
     </div>
-  </section>
+    <div class="choose-program__input radio">
+      <ul class="radio__list">
+        <li class="radio__item">
+          <label class="label-input">
+            <input type="radio" name="похудение" class="radio-input visually-hidden">
+            <span class="radio__fake">
+            </span>
+            <span>похудение</span>
+          </label>
+        </li>
 
+        <li class="radio__item">
+          <label class="label-input">
+            <input type="radio" name="Набор массы" class="radio-input visually-hidden">
+            <span class="radio__fake">
+            </span>
+            <span>Набор массы</span>
+          </label>
+        </li>
+
+        <li class="radio__item">
+          <label class="label-input">
+            <input type="radio" name="Набор массы" class="radio-input visually-hidden">
+            <span class="radio__fake">
+            </span>
+            <span>Не знаю (Нужен ваш совет)</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <section class="contact-information">
+      <h3 class="contact-information__title">Контактные данные
+        (владельца кота)</h3>
+      <form action="#" method="post">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <label for="mail">E-mail:*</label>
+            <input class="input-text input-text__comment" type="email" name="mail-item" value="kuklachev@gmail.com">
+          </li>
+          <li class="contact-item">
+            <label for="phone">Телефон:*</label>
+            <input id="phone" class="input-text input-text__comment" type="tel" name="phone" value="8 (960) 900-60-90">
+          </li>
+        </ul>
+      </form>
+      <h4 class="comment__title">Комментарий</h4>
+      <textarea class="comment__paragraph" name="text">Расскажите обо всех повадках кота</textarea>
+    </section>
+    <h3 class="comment__title">Дополнительно</h3>
+    <section class="comment">
+      <h6 class="visually-hidden">чекбокс</h6>
+      <div class="comment__checkbox-input checkbox">
+        <ul class="checkbox__list">
+          <li class="checkbox__item">
+            <label class="label-input comment-more">
+              <input type="checkbox" name="сахарозаменитель" class="comment__checkbox checkbox__input visually-hidden ">
+              <span class="checkbox__fake"></span>
+              <span> сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="checkbox__item">
+            <label class="label-input comment-more">
+              <input type="checkbox" name="питьевая вода" class="comment__checkbox checkbox__input visually-hidden">
+              <span class="checkbox__fake"></span>
+              <span> питьевая вода</span>
+            </label>
+          </li>
+
+          <li class="checkbox__item">
+            <label class="label-input comment-more">
+              <input type="checkbox" name="молоко" class="comment__checkbox checkbox__input visually-hidden">
+              <span class="checkbox__fake">
+              </span>
+              <span>молоко </span>
+            </label>
+          </li>
+
+          <li class="checkbox__item">
+            <label class="label-input comment-more">
+              <input type="checkbox" name="витамины" class="comment__checkbox checkbox__input visually-hidden">
+              <span class="checkbox__fake">
+              </span>
+              <span>витамины </span>
+            </label>
+          </li>
+        </ul>
+        <button class="button__form " type="button">отправить заявку</button>
+        <p class="comment__paragraf">* — Обязательные поля</p>
+      </div>
+    </section>
+  </section>
   <div class="collabaration collabaration-form">
     <p class="collabaration__rigit-text">приглашаем к сотрудничеству дилеров!</p>
     <p class="collabaration__left-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

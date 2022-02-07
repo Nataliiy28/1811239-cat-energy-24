@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAA;EACP,UAAU,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;CAChB",
-    "sources": [
-        "logo-pic.scss"
-    ],
-    "names": [],
-    "file": "logo-pic.css"
-}

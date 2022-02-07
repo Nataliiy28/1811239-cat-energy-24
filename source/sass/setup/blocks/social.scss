@@ -36,12 +36,21 @@
 }
 
 .social__icon-cat:hover {
-  color: rgba($color: #000000, $alpha: 0.8);
+  opacity: 0.6;
 }
 
 .social__icon-cat:active {
-  color: rgba($color: #000000, $alpha: 0.6);
+  opacity: 0.3;
 }
+
 .social__icon {
   margin-right: 33px;
+}
+
+.social__icon:hover {
+  opacity: 0.3;
+}
+
+.social__icon:active {
+  opacity: 0.1;
 }

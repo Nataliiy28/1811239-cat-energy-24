@@ -1,0 +1,6 @@
+.small {
+  @include tablets {
+    width: 161px;
+    height: 172px;
+  }
+}

@@ -6,7 +6,10 @@
   margin-right: 20px;
 
   @include tablets {
-    background-image: linear-gradient(0deg, #eaeaea 462px, #ffffff 20%);
+    width: 324px;
+    min-height: 506px;
+    background-image: linear-gradient(0deg, #eaeaea 437px, #ffffff 40%);
+    padding-top: 0px;
   }
 }
 
