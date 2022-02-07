@@ -1,7 +1,5 @@
 .small {
   @include tablets {
-    padding-left: 73px;
-    padding-top: 19px;
     width: 161px;
     height: 172px;
   }

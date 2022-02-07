@@ -7,7 +7,7 @@
 
   @include tablets {
     width: 324px;
-    height: 506px;
+    min-height: 506px;
     background-image: linear-gradient(0deg, #eaeaea 437px, #ffffff 40%);
     padding-top: 0px;
   }

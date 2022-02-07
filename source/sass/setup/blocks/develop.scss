@@ -1,10 +1,10 @@
 .develop__logo-icon {
-  margin-right: 20px;
-  padding-left: 52px;
-  margin-left: 85px;
-  margin-bottom: 26px;
-}
+    margin-bottom: 22px;
+    margin-left: auto;
 
-.develop__logo {
-  margin-left: 140px;
+    @include tablets {
+        margin: 0;
+        // margin-left: 0px;
+        padding-left: 29px;
+    }
 }
